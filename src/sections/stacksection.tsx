@@ -8,7 +8,7 @@ const stackData = [
   { name: "Node.js", icon: "https://cdn.simpleicons.org/nodedotjs" },
   { name: "Tailwind", icon: "https://cdn.simpleicons.org/tailwindcss" },
   { name: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql" },
-  { name: "AWS", icon: "https://cdn.simpleicons.org/amazonwebservices/white" },
+  { name: "AWS", icon: "https://img.icons8.com/?size=100&id=33039&format=png&color=000000" },
   { name: "Docker", icon: "https://cdn.simpleicons.org/docker" },
   { name: "Figma", icon: "https://cdn.simpleicons.org/figma" },
   

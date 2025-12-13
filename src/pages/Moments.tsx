@@ -6,32 +6,56 @@ const items = [
   {
     image: 'https://picsum.photos/300/300',
     link: 'https://google.com/',
-    title: 'Exploração',
-    description: 'Novos horizontes.'
+    title: 'Meu Eterno Time',
+    description: 'Como o dreamteam de 92'
   },
   {
     image: 'https://picsum.photos/400/400',
     link: 'https://google.com/',
-    title: 'Natureza',
-    description: 'Paz interior.'
+    title: 'South Summit',
+    description: 'Um dos maiores eventos de startups. Fiz muito Networking lá.'
   },
   {
     image: 'https://picsum.photos/500/500',
     link: 'https://google.com/',
-    title: 'Urbano',
-    description: 'Caos organizado.'
+    title: 'Dia 1 na BeasyBox',
+    description: 'Commitei o .env de produção no primeiro dia...'
   },
   {
     image: 'https://picsum.photos/600/600',
     link: 'https://google.com/',
-    title: 'Arte',
-    description: 'Expressão pura.'
+    title: 'Meu Trote',
+    description: 'Onde eu conheci as pessoas que impulsionaram minha vida'
   },
   {
     image: 'https://picsum.photos/300/400',
     link: 'https://google.com/',
-    title: 'Viagem',
-    description: 'Memórias vivas.'
+    title: 'Italy',
+    description: 'Viagem que a programação me proporcionou'
+  },
+  {
+    image: 'https://picsum.photos/300/400',
+    link: 'https://google.com/',
+    title: 'Minha família',
+    description: 'O suporte que me faz seguir em frente'
+  },
+  {
+    image: 'https://picsum.photos/300/400',
+    link: 'https://google.com/',
+    title: 'Setup de Dev',
+    description: 'Meu cantinho de criação'
+  },
+  {
+    image: 'https://picsum.photos/300/400',
+    link: 'https://google.com/',
+    title: 'The last dance',
+    description: 'O último baile alemão'
+  },
+  {
+    image: 'https://picsum.photos/300/400',
+    link: 'https://google.com/',
+    title: 'Projeto Destaque',
+    description: 'O projeto que me rendeu reconhecimento na universidade'
   }
 ];
 

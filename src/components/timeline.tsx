@@ -3,28 +3,36 @@ import { Building2, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "TechCorp Solutions",
-    period: "2023 - Present",
+    title: "Desenvolvedor Cloud ",
+    company: "OryzaLabs",
+    period: "2026 - Present",
     description:
-      "Led the development of enterprise-scale web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.",
-    technologies: ["React", "Node.js", "TypeScript", "AWS", "MongoDB"],
+      "Criando soluções reais que impulsionam a transformação digital de empresas no mundo todo...",
+    technologies: ["...",],
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Innovations Inc",
-    period: "2021 - 2023",
+    title: "Engenheiro Devops",
+    company: "Beasybox",
+    period: "2025 - 2025",
     description:
-      "Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.",
-    technologies: ["React", "Express.js", "PostgreSQL", "Docker", "Redis"],
+      "Participei ativamente dos ciclos de vida de diversos projetos, garantindo que a esteira de desenvolvimento e produto sempre fique alinhada. Minhas principais contribuições abrangem desde o entendimento do backlog, levantamento de requisitos e distribuição de tarefas ao time de desenvolvimento, até a aceleração direta dos processos de CI/CD, sendo responsável pela gestão e otimização da nossa infraestrutura cloud no ecossistema AWS.",
+    technologies: ["AWS", "EC2","ECS","ECR","SES","SQS","S3","Kubernets", "Docker", "Terraform","Agile","Lean","Scrum",],
   },
   {
-    title: "Frontend Developer",
-    company: "WebTech Studios",
-    period: "2018 - 2021",
+    title: "Desenvolvedor Backend",
+    company: "Beasybox",
+    period: "2024 - 2025",
     description:
-      "Created responsive and interactive user interfaces, collaborated with designers, and optimized application performance.",
-    technologies: ["React", "JavaScript", "SASS", "Webpack", "Jest"],
+      "Focado no desenvolvimento de APIs RESTful escaláveis e na otimização de bancos de dados para melhorar a performance das aplicações web.",
+    technologies: ["NestJs", "Docker", "Spring", "Redis", "Jest"],
+  },
+  {
+    title: "Estagiário de Desenvolvimento",
+    company: "Marista Champagnat",
+    period: "09/2023 - 02/2024",
+    description:
+      "Desenvolvimento de funcionalidades para o sistema interno da escola, focando em melhorias na experiência do usuário e otimização de processos administrativos.",
+    technologies: ["React", "JavaScript", "Python", "Pandas", "SQL" ],
   },
 ];
 

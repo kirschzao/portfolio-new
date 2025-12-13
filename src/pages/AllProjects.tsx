@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LiquidEther from "../components/LiquidEther";
 import { Github, ExternalLink, X } from "lucide-react";
@@ -7,29 +7,32 @@ import { Badge } from "@/components/ui/badge";
 const allProjects = [
   {
     id: 1,
-    title: "E-commerce Dashboard",
+    title: "Beasybot",
     description: [
-      "Um painel administrativo robusto desenvolvido para gerenciar operações de e-commerce em larga escala. O foco principal foi a performance e a visualização de dados em tempo real.",
-      "Implementei gráficos interativos, gestão de inventário com atualizações via WebSocket e um sistema de autenticação seguro baseado em funções."
+      "Um agente de IA externo que atua como um consultor sênior, centralizando e processando todo o conhecimento da empresa — incluindo atas de reuniões, documentos e relatórios estratégicos.",
+      "Minha responsabilidade no projeto foi abrangente, cobrindo grande parte da pipeline de desenvolvimento. Atuei desde a definição do escopo e a elaboração das user stories para o time até a entrega final e o deploy da aplicação. Além das valiosas habilidades de gestão de equipe que desenvolvi, este projeto me proporcionou um aprofundamento significativo em infraestrutura AWS e em como arquitetar projetos escaláveis."
     ],
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
-    repoLink: "https://github.com/seu-usuario/repo-1",
-    demoLink: "https://demo-link.com",
+    technologies: ["Nest.js", "RAG", "Langchain", "OpenAI API", "AWS","Embeddings"],
+    repoLink: "https://github.com/Beasy-Box-Company",
+    demoLink: "https://app.beasybox.tech/",
     images: [
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1555421689-492a1880ceb9?q=80&w=1920&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1555421689-492a1880ceb9?q=80&w=1920&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1555421689-492a1880ceb9?q=80&w=1920&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1555421689-492a1880ceb9?q=80&w=1920&auto=format&fit=crop"
     ]
   },
   {
     id: 2,
-    title: "Finance App Mobile",
+    title: "Plataforma de Doação",
     description: [
-      "Aplicação mobile-first focada em controle financeiro pessoal. O desafio foi criar uma interface extremamente fluida e responsiva que funcionasse offline.",
-      "Utilizei React Native com Expo para garantir compatibilidade entre plataformas e integrei com Firebase para sincronização de dados em tempo real quando online."
+     "Aplicação que facilita doações para a instituição Pao dos Pobres, permitindo que usuários contribuam de forma simples e segura.",
+      "Embora meu foco inicial no time fosse o desenvolvimento das interfaces e componentes do Frontend com React e ShadCn, assumi a responsabilidade adicional pela integração com os serviços da AWS, especificamente S3 e SES, e posteriormente na integração com a API principal do projeto."
     ],
-    technologies: ["React Native", "Expo", "Firebase", "Redux"],
-    repoLink: "https://github.com/seu-usuario/repo-2",
+    technologies: ["React", "ShadCn","TailwindCss", "AWS", "S3", "SES"],
+    repoLink: "https://tools.ages.pucrs.br/plataforma-de-doa-es-para-o-p-o-dos-pobres/",
     demoLink: null,
     images: [
       "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop",
@@ -38,16 +41,34 @@ const allProjects = [
   },
   {
     id: 3,
-    title: "AI Chat Interface",
+    title: "MeetingRecorder Bot",
     description: [
-      "Uma interface de chat moderna para interagir com LLMs. O projeto foca na experiência do usuário, suportando streaming de respostas (efeito de digitação) e histórico de conversas.",
-      "A arquitetura foi pensada para ser modular, permitindo fácil troca entre diferentes provedores de API de Inteligência Artificial."
-    ],
-    technologies: ["React", "OpenAI API", "Framer Motion", "Node.js"],
-    repoLink: "https://github.com/seu-usuario/repo-3",
-    demoLink: "https://ai-chat-demo.com",
+      "Meu próprio gravador de reuniões alimentado por IA que transcreve, resume e destaca os pontos principais das reuniões em tempo real.",
+      "Para reduzir custos, simulei um ambiente gráfico dentro de uma EC2 usando Xvfb, permitindo que o Selenium operasse o Google Meet sem uma interface gráfica real. Reagino a operações do usuário, como expulsões e reconexões, garantindo que o bot se comporte como um participante humano típico."],
+    technologies: ["Python", "Docker", "Selenium", "Ffmpeg", "Xvfb"],
+    repoLink: "https://github.com/kirschzao/MeetingRecorder-Bot",
+    demoLink: null,
     images: [
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop"
+
+    ]
+  },
+  {
+    id: 4,
+    title: "Lobo Guará App",
+    description: [
+      "Lobo Guará foi uma iniciativa voltada a auxiliar migrantes no Brasil. A ideia, que surgiu durante a 5ª Maratona de Inovação da PUCRS, foi destaque no eixo de Sociedade e Desenvolvimento.",
+      "Atuei principalmente na construção da interface da aplicação. Escolhi essa área para fortalecer meus conhecimentos em front-end, já que minha experiência era muito mais focada em aplicações back-end. Criei telas responsivas e dinâmicas, além de realizar as integrações necessárias."],
+    technologies: ["ReactJs", "TanStack", "TailwindCss", "ShadCn"],
+    repoLink: "https://tools.ages.pucrs.br/lobo-guara",
+    demoLink: null,
+    images: [
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop"
+
     ]
   }
 ];

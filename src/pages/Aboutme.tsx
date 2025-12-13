@@ -1,46 +1,60 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LiquidEther from "../components/LiquidEther"; 
 import Timeline from "../components/timeline"; 
-import { X } from "lucide-react"; // Importando ícone de fechar
+import { X } from "lucide-react";
 
-// --- DADOS SOBRE MIM ---
 const aboutSections = [
   {
     id: 1,
     title: "Quem Sou Eu",
     content: [
-      "Olá! Sou um desenvolvedor focado em criar experiências digitais que unem performance e design de ponta.",
-      "Minha paixão pela tecnologia começou cedo e hoje se traduz em códigos limpos, interfaces intuitivas e soluções escaláveis."
+      "Olá! Meu nome é Bernardo Kirsch, sou um desenvolvedor de software, focado em backend e apaixonado por criar soluções tecnológicas que fazem a diferença. Com experiência em diversas linguagens de programação e frameworks, busco sempre aprimorar minhas habilidades e aprender novas tecnologias.",
+      "Hoje, meu foco principal é o ambiente em nuvem, onde posso aplicar meus conhecimentos para desenvolver aplicações escaláveis e eficientes. Adoro enfrentar desafios técnicos e encontrar soluções inovadoras para problemas complexos."
     ],
     image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1470&auto=format&fit=crop"
   },
   {
     id: 2,
+    title: "Faculdade e Educação",
+    content: [
+      "Atualmente, estou cursando Engenharia de Software na PUC-RS e Matemática Aplicada na UFRGS, unindo lógica e tecnologia para solucionar problemas complexos. Minha abordagem é direcionada para colaboração e inovação, sempre buscando criar impacto positivo por meio de soluções tecnológicas acessíveis e eficazes.",
+      "Antes disso, concluí o ensino médio no Colégio Pastor Dohms, onde desenvolvi uma base sólida em ciências exatas e lingua alemã.",
+
+    ],
+    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470&auto=format&fit=crop"
+  },
+  {
+    id: 3,
     title: "Além do Código",
     content: [
-      "Quando não estou programando, estou sempre buscando novas formas de inspiração. Seja explorando novas tecnologias, lendo sobre design ou praticando esportes.",
-      "Acredito que o equilíbrio é fundamental para manter a criatividade em alta."
+      "Quando não estou codando, adoro sair da com meus amigos e conhecer novos lugares. Acredito que explorar o mundo ao meu redor me inspira a trazer novas perspectivas para meus projetos.",
+      "Também gosto muito de música, a musica é uma grande parte da minha vida e me ajuda a manter o foco e a criatividade enquanto trabalho. Não existe nada melhot que café, codígo e Bad Bunny no fone."
     ],
     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470&auto=format&fit=crop"
   }
 ];
 
-// --- DADOS DAS CERTIFICAÇÕES ---
 const certifications = [
   {
     id: "cert1",
-    title: "AWS Certified Solutions Architect",
+    title: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
-    description: "Validação de expertise em projetar sistemas distribuídos na plataforma AWS, com foco em escalabilidade, segurança e otimização de custos.",
-    // Substitua pela imagem real do seu certificado
-    image: "https://images.unsplash.com/photo-1523580846055-a722c423e59e?q=80&w=2670&auto=format&fit=crop"
+    description: "Esperando...",
+    image: null
   },
   {
     id: "cert2",
-    title: "Meta Frontend Developer",
-    issuer: "Meta (Facebook)",
-    description: "Certificação profissional cobrindo tópicos avançados de React, UX/UI Design, controle de versão e desenvolvimento de interfaces responsivas modernas.",
+    title: "Clean Code",
+    issuer: "RocketSeat",
+    description: "Certificação focada em boas práticas de desenvolvimento de software, abordando princípios de código limpo, design patterns e técnicas para melhorar a legibilidade e manutenção do código.",
+    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    id: "cert3",
+    title: "Fullstack Developer Course",
+    issuer: "RocketSeat",
+    description: "Curso completo de desenvolvimento web fullstack, abrangendo desde o frontend com React até o backend com Node.js, incluindo banco de dados, autenticação e deploy.",
     image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2670&auto=format&fit=crop"
   }
 ];
@@ -75,7 +89,6 @@ export default function AboutMe() {
 
       <div className="relative z-10 w-full max-w-7xl px-6 md:px-12 flex flex-col items-center">
         
-        {/* Título Principal */}
         <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -90,7 +103,6 @@ export default function AboutMe() {
             </h1>
         </motion.div>
 
-        {/* --- SEÇÃO 1: TEXTOS SOBRE MIM --- */}
         <div className="flex flex-col gap-24 w-full mb-32">
             {aboutSections.map((section, index) => {
                 const isEven = index % 2 === 0;
@@ -130,7 +142,6 @@ export default function AboutMe() {
             })}
         </div>
 
-        {/* --- SEÇÃO 2: JORNADA PROFISSIONAL --- */}
         <div className="w-full flex flex-col items-center mb-32">
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
@@ -157,10 +168,8 @@ export default function AboutMe() {
             </motion.div>
         </div>
 
-        {/* --- SEÇÃO 3: CERTIFICAÇÕES (NOVA) --- */}
         <div className="w-full flex flex-col items-center">
             
-            {/* Título */}
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -176,16 +185,13 @@ export default function AboutMe() {
                 </h2>
             </motion.div>
 
-            {/* Lista de Certificações */}
             <div className="flex flex-col gap-24 w-full">
               {certifications.map((cert, index) => {
-                 // Alterna lados (Ímpar/Par)
                  const isEven = index % 2 === 0;
 
                  return (
                   <div key={cert.id} className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
                       
-                      {/* Texto */}
                       <motion.div 
                           initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                           whileInView={{ opacity: 1, x: 0 }}
@@ -207,7 +213,6 @@ export default function AboutMe() {
                           </p>
                       </motion.div>
 
-                      {/* Imagem (Clicável) */}
                       <motion.div 
                           initial={{ opacity: 0, x: isEven ? 50 : -50 }}
                           whileInView={{ opacity: 1, x: 0 }}
@@ -222,17 +227,21 @@ export default function AboutMe() {
                             className="relative w-full aspect-[4/3] max-w-[500px] cursor-zoom-in group"
                             onClick={() => setSelectedImage(cert.image)}
                           >
-                              {/* Efeito Glow */}
                               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/40 to-pink-600/40 rounded-3xl blur-3xl -z-10 animate-pulse-slow" />
                               
-                              {/* Card da Imagem */}
                               <div className="w-full h-full rounded-3xl border-[6px] border-neutral-900/80 shadow-2xl overflow-hidden backdrop-blur-sm transform group-hover:scale-[1.02] transition-transform duration-500">
-                                  <img
-                                      src={cert.image}
-                                      alt={cert.title}
-                                      className="w-full h-full object-cover"
-                                  />
-                                  {/* Overlay de "Ver" */}
+                                  
+                                  {cert.image ? (
+                                      <img
+                                          src={cert.image}
+                                          alt={cert.title}
+                                          className="w-full h-full object-cover"
+                                      />
+                                  ) : (
+                                      <div className="w-full h-full bg-neutral-800 flex items-center justify-center">
+                                          <span className="text-gray-400">Sem imagem disponível</span>
+                                      </div>
+                                  )}
                                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                       <span className="text-white font-medium bg-black/50 px-4 py-2 rounded-full border border-white/20">
                                         Ver Certificado
@@ -251,17 +260,15 @@ export default function AboutMe() {
 
       </div>
 
-      {/* --- MODAL / LIGHTBOX --- */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setSelectedImage(null)} // Fecha ao clicar no fundo
+            onClick={() => setSelectedImage(null)} 
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 cursor-zoom-out"
           >
-            {/* Botão Fechar */}
             <button 
               className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
               onClick={() => setSelectedImage(null)}
@@ -269,7 +276,6 @@ export default function AboutMe() {
               <X size={40} />
             </button>
 
-            {/* Imagem Ampliada */}
             <motion.img
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -277,7 +283,7 @@ export default function AboutMe() {
               src={selectedImage}
               alt="Certificado Ampliado"
               className="max-w-full max-h-[90vh] rounded-xl shadow-2xl border border-white/10"
-              onClick={(e) => e.stopPropagation()} // Evita fechar ao clicar na imagem
+              onClick={(e) => e.stopPropagation()} 
             />
           </motion.div>
         )}

@@ -8,6 +8,7 @@ const Navbar = () => {
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
+        { label: "Home", ariaLabel: "Quem eu sou?" ,href: "/"},
         { label: "Quem eu sou?", ariaLabel: "Quem eu sou?" ,href: "/aboutme"},
         { label: "Memórias", ariaLabel: "Sobre memórias" ,href: "/moments"}
       ]

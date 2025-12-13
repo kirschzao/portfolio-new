@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
 
 // --- SVGs Oficiais ---
 const SpotifyLogo = () => (
@@ -22,6 +21,12 @@ const LinkedInLogo = () => (
   </svg>
 );
 
+const GithubLogo = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12 text-white">
+    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405 1.02 0 2.04.135 3 .405 2.28-1.56 3.285-1.23 3.285-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+  </svg>
+);
+
 const bentoItems = [
   {
     id: "spotify",
@@ -35,7 +40,7 @@ const bentoItems = [
     id: "linkedin",
     title: "LinkedIn",
     icon: <LinkedInLogo />,
-    link: "https://linkedin.com/in/seu-usuario",
+    link: "https://www.linkedin.com/in/bernardo-kirsch",
     bg: "bg-neutral-900/40 hover:bg-neutral-800/60",
     gradient: "group-hover:from-blue-500/20 group-hover:to-transparent"
   },
@@ -43,17 +48,17 @@ const bentoItems = [
     id: "instagram",
     title: "Instagram",
     icon: <InstagramLogo />,
-    link: "https://instagram.com/seu-usuario",
+    link: "https://www.instagram.com/bekirsch__/",
     bg: "bg-neutral-900/40 hover:bg-neutral-800/60",
     gradient: "group-hover:from-pink-500/20 group-hover:to-transparent"
   },
   {
-    id: "contact",
-    title: "Email",
-    icon: <Mail className="w-12 h-12 text-purple-500" />,
-    link: "mailto:seuemail@exemplo.com",
+    id: "github",
+    title: "GitHub",
+    icon: <GithubLogo />,
+    link: "https://github.com/kirschzao", 
     bg: "bg-neutral-900/40 hover:bg-neutral-800/60",
-    gradient: "group-hover:from-purple-500/20 group-hover:to-transparent"
+    gradient: "group-hover:from-white/20 group-hover:to-transparent"
   },
 ];
 
@@ -64,7 +69,6 @@ function BentoSection() {
       {/* Container Principal */}
       <div className="w-full max-w-4xl text-center">
         
-        {/* Título Centralizado e Sem Quebra de Linha */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

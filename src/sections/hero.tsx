@@ -1,9 +1,9 @@
 import TextType from "@/components/TextType";
-import { Github, Linkedin, ArrowDown } from "lucide-react";
+import { Github, Linkedin,} from "lucide-react";
 import { motion } from "framer-motion";
 
 function Hero() {
-  const userPhotoUrl = "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1470&auto=format&fit=crop";
+  const userPhotoUrl = "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG-20230727-WA0180_Original.jpg";
 
   return (
     // 1. Mudei o section para ser um Flex Container que centraliza tudo
@@ -26,7 +26,7 @@ function Hero() {
             
             <div className="text-4xl md:text-6xl font-bold text-white min-h-[80px] flex items-center">
               <TextType
-                text={["Bernardo Kirsch", "Full Stack Dev", "Creative Coder"]}
+                text={["Bernardo Kirsch,", "Cloud Developer,", "Tech Enthusiast."]}
                 typingSpeed={100}
                 deletingSpeed={50}
                 loop={true}
@@ -38,12 +38,12 @@ function Hero() {
 
           <p className="text-gray-400 text-lg md:text-xl max-w-xl leading-relaxed">
             Desenvolvedor apaixonado por criar experiências digitais modernas, 
-            rápidas e impactantes.
+            rápidas e impactantes. Sempre buscando ajudar as pessoas através da tecnologia.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-4">
             <a 
-              href="https://github.com" 
+              href="https://github.com/kirschzao" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-all group"
@@ -52,7 +52,7 @@ function Hero() {
               GitHub
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/bernardo-kirsch" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-white/20 text-white font-bold rounded-full hover:bg-white/10 transition-all group"
