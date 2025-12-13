@@ -64,3 +64,15 @@ html {
     }
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Garante que o fundo não fica branco se o conteúdo for curto */
+  background-color: #000; /* Ou a cor escura que estás a usar */
+  min-height: 100vh;
+}
