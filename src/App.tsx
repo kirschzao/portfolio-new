@@ -1,14 +1,12 @@
 
 import "./App.css";
-import FirstSection  from "./sections/firstsection";
-import Navbar from "./sections/navbar";
+import MainSection  from "./sections/mainsection";
 
 
 function App() {
   return (
     <div className="bg-black">
-      <Navbar />
-      <FirstSection />
+      <MainSection/>
     </div>
   );
 }

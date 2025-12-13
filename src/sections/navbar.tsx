@@ -1,5 +1,6 @@
 import CardNav from '../components/CardNav'
 
+
 const Navbar = () => {
   const items = [
     {
@@ -7,8 +8,8 @@ const Navbar = () => {
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Company", ariaLabel: "About Company" },
-        { label: "Careers", ariaLabel: "About Careers" }
+        { label: "Company", ariaLabel: "About Company" ,href: "mailto:"},
+        { label: "Careers", ariaLabel: "About Careers" ,href: "mailto:"}
       ]
     },
     {
@@ -16,8 +17,8 @@ const Navbar = () => {
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects" },
-        { label: "Case Studies", ariaLabel: "Project Case Studies" }
+        { label: "Featured", ariaLabel: "Featured Projects" ,href: "mailto:"},
+        { label: "Case Studies", ariaLabel: "Project Case Studies" ,href: "mailto:"}
       ]
     },
     {
@@ -25,24 +26,26 @@ const Navbar = () => {
       bgColor: "#170D27", 
       textColor: "#fff",
       links: [
-        { label: "Email", ariaLabel: "Email us" },
-        { label: "Twitter", ariaLabel: "Twitter" },
-        { label: "LinkedIn", ariaLabel: "LinkedIn" }
+        { label: "Email", ariaLabel: "Email us" ,href: "mailto:"},
+        { label: "Twitter", ariaLabel: "Twitter",href: "mailto:" },
+        { label: "LinkedIn", ariaLabel: "LinkedIn" ,href: "mailto:"}
       ]
     }
   ];
 
   return (
-    <CardNav
-      //logo={logo}
-      //logoAlt="Company Logo"
-      items={items}
-      baseColor="#ffffff10"
-      menuColor="#ffffff20"
-      buttonBgColor="#222"
-      buttonTextColor="#fff"
-      ease="power3.out"
-    />
+    <div className="fixed top-0 left-0 w-full z-50">
+        <CardNav
+            logo=""
+            logoAlt="Company Logo"
+            items={items}
+            baseColor="#ffffff10"
+            menuColor="#ffffff20"
+            buttonBgColor="#234"
+            buttonTextColor="#fff"
+            ease="power3.out"
+        />
+    </div>
   );
 };
 

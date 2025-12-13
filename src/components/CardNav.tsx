@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 // use your own icon import if react-icons is not available
 import { GoArrowUpRight } from 'react-icons/go';
+import { DropdownMenuRadioGroupDemo } from './dropdown';
 
 type CardNavLink = {
   label: string;
@@ -29,15 +30,11 @@ export interface CardNavProps {
 }
 
 const CardNav: React.FC<CardNavProps> = ({
-  logo,
-  logoAlt = 'Logo',
   items,
   className = '',
   ease = 'power3.out',
   baseColor = '#fff',
   menuColor,
-  buttonBgColor,
-  buttonTextColor
 }) => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -189,13 +186,11 @@ const CardNav: React.FC<CardNavProps> = ({
             {/*<img src={logo} alt={logoAlt} className="logo h-[28px]" />*/}
           </div>
 
-          <button
-            type="button"
+          <div
             className="card-nav-cta-button hidden md:inline-flex border-0 rounded-[calc(0.75rem-0.2rem)] px-4 items-center h-full font-medium cursor-pointer transition-colors duration-300"
-            style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >
-            Get in Touch
-          </button>
+          <DropdownMenuRadioGroupDemo/>
+          </div>
         </div>
 
         <div
