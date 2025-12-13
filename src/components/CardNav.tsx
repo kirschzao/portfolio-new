@@ -215,6 +215,7 @@ const CardNav: React.FC<CardNavProps> = ({
                     key={`${lnk.label}-${i}`}
                     className="nav-card-link inline-flex items-center gap-[6px] no-underline cursor-pointer transition-opacity duration-300 hover:opacity-75 text-[15px] md:text-[16px]"
                     href={lnk.href}
+                    target="_blank"
                     aria-label={lnk.ariaLabel}
                   >
                     <GoArrowUpRight className="nav-card-link-icon shrink-0" aria-hidden="true" />

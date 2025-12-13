@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "menu": "Menü",
+    "work": "Arbeit",
+    "contact": "Kontakt",
+    "language": "Sprache",
+    "select": "Auswählen"
+  },
+  "hero": {
+    "greeting": "HALLO, ICH BIN",
+    "role1": "Bernardo Kirsch",
+    "role2": "Full Stack Dev",
+    "role3": "Creative Coder",
+    "description": "Entwickler mit Leidenschaft für moderne, schnelle und wirkungsvolle digitale Erlebnisse.",
+    "scroll": "Scrollen"
+  },
+  "sections": {
+    "about": "Über Mich",
+    "projects": "Meine Projekte",
+    "stack": "Mein Stack",
+    "contact_title": "Lass uns reden?"
+  }
+}

@@ -4,31 +4,30 @@ import CardNav from '../components/CardNav'
 const Navbar = () => {
   const items = [
     {
-      label: "About",
+      label: "Sobre Mim",
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Company", ariaLabel: "About Company" ,href: "mailto:"},
-        { label: "Careers", ariaLabel: "About Careers" ,href: "mailto:"}
+        { label: "Quem eu sou?", ariaLabel: "Quem eu sou?" ,href: "/aboutme"},
+        { label: "Memórias", ariaLabel: "Sobre memórias" ,href: "/moments"}
       ]
     },
     {
-      label: "Projects", 
+      label: "Projetos", 
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects" ,href: "mailto:"},
-        { label: "Case Studies", ariaLabel: "Project Case Studies" ,href: "mailto:"}
+        { label: "Projetos", ariaLabel: "Projetos que participei" ,href: "/projects"},
       ]
     },
     {
-      label: "Contact",
+      label: "Contatos",
       bgColor: "#170D27", 
       textColor: "#fff",
       links: [
-        { label: "Email", ariaLabel: "Email us" ,href: "mailto:"},
-        { label: "Twitter", ariaLabel: "Twitter",href: "mailto:" },
-        { label: "LinkedIn", ariaLabel: "LinkedIn" ,href: "mailto:"}
+        { label: "Instagram", ariaLabel: "Email" ,href: "https://www.instagram.com/bekirsch__/"},
+        { label: "Github", ariaLabel: "Github",href: "https://github.com/kirschzao" },
+        { label: "LinkedIn", ariaLabel: "LinkedIn" ,href: "https://www.linkedin.com/in/bernardo-kirsch"}
       ]
     }
   ];

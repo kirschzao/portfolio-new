@@ -210,7 +210,7 @@ const CardSwap: React.FC<CardSwapProps> = ({
     <div
       ref={container}
       className="relative w-full h-full flex items-center justify-center perspective-[1000px] overflow-visible"
-      style={{ width, height }} // Ele vai respeitar o width/height passados via props
+      style={{ width, height }} 
     >
       {rendered}
     </div>
