@@ -28,7 +28,7 @@ void main() {
 
     if (gl_VertexID > 0) {
         vec3 rotationAxis = uRotationAxisVelocity.xyz;
-        float rotationVelocity = min(.15, uRotationAxisVelocity.w * 15.);
+        float rotationVelocity = min(.05, uRotationAxisVelocity.w * 6.);
         vec3 stretchDir = normalize(cross(centerPos, rotationAxis));
         vec3 relativeVertexPos = normalize(worldPosition.xyz - centerPos);
         float strength = dot(stretchDir, relativeVertexPos);
@@ -831,7 +831,7 @@ class InfiniteGridMenu {
 
     const itemCount = Math.max(1, this.items.length);
     this.atlasSize = Math.ceil(Math.sqrt(itemCount));
-    const cellSize = 512;
+    const cellSize = 1024;
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d')!;
     canvas.width = this.atlasSize * cellSize;
