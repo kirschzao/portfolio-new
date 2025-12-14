@@ -28,6 +28,12 @@ const items = [
     description: 'Meu time de Projeto e Pesquisa'
   },
   {
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1748986111142.jpeg',
+    link: 'https://google.com/',
+    title: 'Minha Primeira Hackatona',
+    description: ''
+  },
+  {
     image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG_2125_Original.jpg',
     link: 'https://google.com/',
     title: 'Meu Trote',
@@ -62,12 +68,6 @@ const items = [
     link: 'https://google.com/',
     title: 'Projeto Destaque',
     description: 'O projeto que me rendeu reconhecimento na universidade'
-  },
-  {
-    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1748986111142.jpeg',
-    link: 'https://google.com/',
-    title: 'Minha Primeira Hackatona',
-    description: ''
   },
   {
     image: 'https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/IMG_3322_Original.jpg',

@@ -7,12 +7,7 @@ import StackSection from './stacksection';
 
 function MainSection() {
   return (
-    // Container Principal: min-h-screen para ter pelo menos a altura da tela, mas crescer com o conteúdo.
-    // relative para posicionar o fundo e o conteúdo. overflow-hidden para evitar barras de rolagem extras.
     <div className="w-full min-h-screen bg-black relative overflow-hidden">
-        
-        {/* O LiquidEther agora é o fundo de todo o container */}
-        {/* Usamos style inline para garantir o posicionamento absoluto e que cubra 100% do pai */}
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
             <LiquidEther
                 colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
