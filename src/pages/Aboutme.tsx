@@ -7,12 +7,12 @@ import { X } from "lucide-react";
 const aboutSections = [
   {
     id: 1,
-    title: "Quem Sou Eu",
+    title: "Quem Eu Sou?",
     content: [
       "Olá! Meu nome é Bernardo Kirsch, sou um desenvolvedor de software, focado em backend e apaixonado por criar soluções tecnológicas que fazem a diferença. Com experiência em diversas linguagens de programação e frameworks, busco sempre aprimorar minhas habilidades e aprender novas tecnologias.",
       "Hoje, meu foco principal é o ambiente em nuvem, onde posso aplicar meus conhecimentos para desenvolver aplicações escaláveis e eficientes. Adoro enfrentar desafios técnicos e encontrar soluções inovadoras para problemas complexos."
     ],
-    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/FullSizeRender.jpeg"
+    image: " https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG-20230727-WA0180_Original.jpg"
   },
   {
     id: 2,

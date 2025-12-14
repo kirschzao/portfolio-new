@@ -16,12 +16,14 @@ const allProjects = [
     repoLink: "https://github.com/Beasy-Box-Company",
     demoLink: "https://app.beasybox.tech/",
     images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555421689-492a1880ceb9?q=80&w=1920&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555421689-492a1880ceb9?q=80&w=1920&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555421689-492a1880ceb9?q=80&w=1920&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555421689-492a1880ceb9?q=80&w=1920&auto=format&fit=crop"
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253025291.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253025448.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024870.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024646.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024706.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024533.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024782.jpeg"
+
     ]
   },
   {
@@ -35,8 +37,11 @@ const allProjects = [
     repoLink: "https://tools.ages.pucrs.br/plataforma-de-doa-es-para-o-p-o-dos-pobres/",
     demoLink: null,
     images: [
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=1920&auto=format&fit=crop"
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255282700.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255280789.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255280067.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255282749.jpeg",
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255279914.jpeg"
     ]
   },
   {
@@ -49,9 +54,7 @@ const allProjects = [
     repoLink: "https://github.com/kirschzao/MeetingRecorder-Bot",
     demoLink: null,
     images: [
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop"
+      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG_3123.jpeg"
 
     ]
   },
@@ -65,9 +68,10 @@ const allProjects = [
     repoLink: "https://tools.ages.pucrs.br/lobo-guara",
     demoLink: null,
     images: [
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop"
+      "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181269562.jpeg",
+      "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181268768.jpeg",
+      "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181280884.jpeg",
+      "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181282436.jpeg"
 
     ]
   }

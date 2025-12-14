@@ -3,7 +3,7 @@ import { Github, Linkedin,} from "lucide-react";
 import { motion } from "framer-motion";
 
 function Hero() {
-  const userPhotoUrl = "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG-20230727-WA0180_Original.jpg";
+  const userPhotoUrl = "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/FullSizeRender.jpeg";
 
   return (
     // 1. Mudei o section para ser um Flex Container que centraliza tudo
