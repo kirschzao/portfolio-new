@@ -22,7 +22,7 @@ const items = [
     description: 'Um dos maiores eventos de startups. Fiz muito Networking lá.'
   },
   {
-    image: '',
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG_3453_Original.jpg',
     link: 'https://google.com/',
     title: 'Avante Time HP',
     description: 'Meu time de Projeto e Pesquisa'
