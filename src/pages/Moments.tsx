@@ -4,58 +4,76 @@ import InfiniteMenu from "../components/InfiniteMenu";
 // --- DADOS DOS MOMENTOS (URLs Normais, sem grayscale) ---
 const items = [
   {
-    image: 'https://picsum.photos/300/300',
-    link: 'https://google.com/',
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/0810e1b9-b034-42da-bbe6-dcd28e58aafe.JPG',
+    link: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/0810e1b9-b034-42da-bbe6-dcd28e58aafe.JPG',
     title: 'Meu Eterno Time',
     description: 'Como o dreamteam de 92'
   },
   {
-    image: 'https://picsum.photos/400/400',
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG_2986.jpg',
     link: 'https://google.com/',
     title: 'South Summit',
     description: 'Um dos maiores eventos de startups. Fiz muito Networking lá.'
   },
   {
-    image: 'https://picsum.photos/500/500',
-    link: 'https://google.com/',
-    title: 'Dia 1 na BeasyBox',
-    description: 'Commitei o .env de produção no primeiro dia...'
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/FullSizeRender.jpeg',
+    link: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/FullSizeRender.jpeg',
+    title: 'Mais um South Summit',
+    description: 'Um dos maiores eventos de startups. Fiz muito Networking lá.'
   },
   {
-    image: 'https://picsum.photos/600/600',
+    image: '',
+    link: 'https://google.com/',
+    title: 'Avante Time HP',
+    description: 'Meu time de Projeto e Pesquisa'
+  },
+  {
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG_2125_Original.jpg',
     link: 'https://google.com/',
     title: 'Meu Trote',
     description: 'Onde eu conheci as pessoas que impulsionaram minha vida'
   },
   {
-    image: 'https://picsum.photos/300/400',
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG_1357.jpg',
     link: 'https://google.com/',
-    title: 'Italy',
-    description: 'Viagem que a programação me proporcionou'
+    title: 'Um ano novo',
+    description: ''
   },
   {
-    image: 'https://picsum.photos/300/400',
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/258A3971_Original.jpg',
     link: 'https://google.com/',
     title: 'Minha família',
     description: 'O suporte que me faz seguir em frente'
   },
   {
-    image: 'https://picsum.photos/300/400',
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG_3170.jpg',
     link: 'https://google.com/',
     title: 'Setup de Dev',
     description: 'Meu cantinho de criação'
   },
   {
-    image: 'https://picsum.photos/300/400',
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/DSC_0868.JPG',
     link: 'https://google.com/',
     title: 'The last dance',
     description: 'O último baile alemão'
   },
   {
-    image: 'https://picsum.photos/300/400',
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1754181280884.jpeg',
     link: 'https://google.com/',
     title: 'Projeto Destaque',
     description: 'O projeto que me rendeu reconhecimento na universidade'
+  },
+  {
+    image: 'https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1748986111142.jpeg',
+    link: 'https://google.com/',
+    title: 'Minha Primeira Hackatona',
+    description: ''
+  },
+  {
+    image: 'https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/IMG_3322_Original.jpg',
+    link: 'https://google.com/',
+    title: 'Um grande 10',
+    description: '10 na prova de Cálculo I'
   }
 ];
 
