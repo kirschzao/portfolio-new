@@ -12,7 +12,7 @@ const aboutSections = [
       "Olá! Meu nome é Bernardo Kirsch, sou um desenvolvedor de software, focado em backend e apaixonado por criar soluções tecnológicas que fazem a diferença. Com experiência em diversas linguagens de programação e frameworks, busco sempre aprimorar minhas habilidades e aprender novas tecnologias.",
       "Hoje, meu foco principal é o ambiente em nuvem, onde posso aplicar meus conhecimentos para desenvolver aplicações escaláveis e eficientes. Adoro enfrentar desafios técnicos e encontrar soluções inovadoras para problemas complexos."
     ],
-    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1470&auto=format&fit=crop"
+    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/FullSizeRender.jpeg"
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const aboutSections = [
       "Antes disso, concluí o ensino médio no Colégio Pastor Dohms, onde desenvolvi uma base sólida em ciências exatas e lingua alemã.",
 
     ],
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470&auto=format&fit=crop"
+    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1748986111142.jpeg"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const aboutSections = [
       "Quando não estou codando, adoro sair da com meus amigos e conhecer novos lugares. Acredito que explorar o mundo ao meu redor me inspira a trazer novas perspectivas para meus projetos.",
       "Também gosto muito de música, a musica é uma grande parte da minha vida e me ajuda a manter o foco e a criatividade enquanto trabalho. Não existe nada melhot que café, codígo e Bad Bunny no fone."
     ],
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470&auto=format&fit=crop"
+    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG-20230806-WA0031_Original.jpg"
   }
 ];
 
@@ -48,14 +48,14 @@ const certifications = [
     title: "Clean Code",
     issuer: "RocketSeat",
     description: "Certificação focada em boas práticas de desenvolvimento de software, abordando princípios de código limpo, design patterns e técnicas para melhorar a legibilidade e manutenção do código.",
-    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2670&auto=format&fit=crop"
+    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Imagem%2014-12-2025%20a%CC%80s%2019.11.jpg"
   },
   {
     id: "cert3",
     title: "Fullstack Developer Course",
     issuer: "RocketSeat",
     description: "Curso completo de desenvolvimento web fullstack, abrangendo desde o frontend com React até o backend com Node.js, incluindo banco de dados, autenticação e deploy.",
-    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2670&auto=format&fit=crop"
+    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Imagem.png"
   }
 ];
 
