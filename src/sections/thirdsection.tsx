@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CardSwap, { Card } from '../components/CardSwap';
 import { Github, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
