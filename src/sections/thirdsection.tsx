@@ -10,7 +10,7 @@ const projects = [
     title: "Beasybot",
     description: "Um agente de IA externo que atua como um consultor sênior, centralizando e processando todo o conhecimento da empresa.",
     tech: ["Nest.js", "RAG", "Langchain", "OpenAI"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop", 
+    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253025291.jpeg", 
     gradient: "from-blue-500 to-cyan-500"
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     title: "Plataforma Doação",
     description: "Aplicação que facilita doações para a instituição Pao dos Pobres, permitindo contribuições simples e seguras.",
     tech: ["ReactJs", "Tailwind", "ShadCn", "AWS"],
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=2670&auto=format&fit=crop",
+    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255282700.jpeg",
     gradient: "from-green-500 to-emerald-500"
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     title: "MeetingRecorder",
     description: "Gravador de reuniões com IA que transcreve, resume e destaca os pontos principais em tempo real.",
     tech: ["Python", "Docker", "Selenium", "Ffmpeg"],
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2670&auto=format&fit=crop",
+    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024706.jpeg",
     gradient: "from-purple-500 to-pink-500"
   },
 ];
@@ -51,8 +51,6 @@ function ThirdSection() {
       
       <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
-        {/* LADO ESQUERDO (Texto) */}
-        {/* Removido as classes de 'order' para que o texto fique sempre primeiro no HTML */}
         <motion.div 
           className="flex flex-col gap-6 md:gap-8 z-10"
           initial={{ opacity: 0, x: -50 }}
