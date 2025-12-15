@@ -72,7 +72,7 @@ function ThirdSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 mt-2">
             <a 
-              href="https://github.com/bernardokirsch" 
+              href="https://github.com/kirschzao" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-black text-lg font-semibold rounded-full hover:bg-gray-200 transition-all"
