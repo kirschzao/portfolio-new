@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 // --- SVGs Oficiais ---
 const SpotifyLogo = () => (
@@ -29,14 +30,6 @@ const GithubLogo = () => (
 
 const bentoItems = [
   {
-    id: "spotify",
-    title: "Spotify",
-    icon: <SpotifyLogo />,
-    link: "https://open.spotify.com",
-    bg: "bg-neutral-900/40 hover:bg-neutral-800/60",
-    gradient: "group-hover:from-green-500/20 group-hover:to-transparent"
-  },
-  {
     id: "linkedin",
     title: "LinkedIn",
     icon: <LinkedInLogo />,
@@ -60,15 +53,22 @@ const bentoItems = [
     bg: "bg-neutral-900/40 hover:bg-neutral-800/60",
     gradient: "group-hover:from-white/20 group-hover:to-transparent"
   },
+  {
+    id: "spotify",
+    title: "Spotify",
+    icon: <SpotifyLogo />,
+    link: "https://open.spotify.com/user/sbmito?si=q3KYHDWxQ02mJeB04g8ZGA",
+    bg: "bg-neutral-900/40 hover:bg-neutral-800/60",
+    gradient: "group-hover:from-green-500/20 group-hover:to-transparent"
+  },
 ];
 
 function BentoSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="w-full py-24 px-4 md:px-12 flex flex-col items-center justify-center relative z-10 overflow-hidden">
-      
-      {/* Container Principal */}
       <div className="w-full max-w-4xl text-center">
-        
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -77,19 +77,17 @@ function BentoSection() {
           className="mb-16 flex flex-col gap-4 items-center"
         >
           <h2 className="text-5xl md:text-8xl font-bold text-white leading-tight">
-            Vamos{" "}
+            {t('bento.title_part1')}{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Conversar?
+              {t('bento.title_part2')}
             </span>
           </h2>
           <p className="text-gray-400 text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed">
-            Me encontre nas redes sociais ou mande uma mensagem.
+            {t('bento.description')}
           </p>
         </motion.div>
 
-        {/* Bento Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          
           {bentoItems.map((item, index) => (
             <motion.a
               href={item.link}
@@ -107,17 +105,12 @@ function BentoSection() {
                 ${item.bg} backdrop-blur-md shadow-lg overflow-hidden
               `}
             >
-              {/* Gradiente de fundo ao passar o mouse */}
               <div className={`absolute inset-0 bg-gradient-to-br opacity-0 transition-opacity duration-500 ${item.gradient}`} />
-              
-              {/* Ícone Central */}
               <div className="relative z-10 transform transition-transform duration-500 group-hover:scale-110 drop-shadow-2xl">
                 {item.icon}
               </div>
-
             </motion.a>
           ))}
-
         </div>
       </div>
     </section>

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const stackData = [
-  // ... seus dados ...
   { name: "React", icon: "https://cdn.simpleicons.org/react" },
   { name: "Next.js", icon: "https://cdn.simpleicons.org/nextdotjs/white" },
   { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript" },
@@ -24,19 +24,18 @@ const stackData = [
 ];
 
 function StackSection() {
+  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
-    handleResize(); // Check initial
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Lógica de Divisão das Linhas
   let rows = [];
   if (isMobile) {
-    // Mobile: 4 Linhas
     const quarter = Math.ceil(stackData.length / 4);
     rows = [
       stackData.slice(0, quarter),
@@ -45,7 +44,6 @@ function StackSection() {
       stackData.slice(quarter * 3)
     ];
   } else {
-    // Desktop: 2 Linhas (Padrão original)
     const half = Math.ceil(stackData.length / 2);
     rows = [
       stackData.slice(0, half),
@@ -55,8 +53,6 @@ function StackSection() {
 
   return (
     <section className="w-full py-24 flex flex-col items-center justify-center relative z-10 overflow-hidden">
-      
-      {/* Título Centralizado */}
       <div className="w-full max-w-7xl px-6 md:px-12 mb-16 text-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -65,38 +61,32 @@ function StackSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-5xl md:text-8xl font-bold text-white leading-tight">
-            Minha{" "}
+            {t('stack.title_part1')}{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Stack
+              {t('stack.title_part2')}
             </span>
           </h2>
           <p className="text-gray-400 text-lg md:text-2xl mt-4 max-w-2xl mx-auto leading-relaxed">
-            Ferramentas e tecnologias que uso no dia a dia.
+            {t('stack.description')}
           </p>
         </motion.div>
       </div>
 
-      {/* Renderização das Linhas Dinâmicas */}
       <div className="w-full flex flex-col gap-6">
         {rows.map((rowItems, rowIndex) => (
           <div key={rowIndex} className="w-full flex overflow-hidden relative">
-            
-            {/* Máscaras laterais */}
             <div className="absolute inset-y-0 left-0 w-10 md:w-20 bg-gradient-to-r from-black to-transparent z-10" />
             <div className="absolute inset-y-0 right-0 w-10 md:w-20 bg-gradient-to-l from-black to-transparent z-10" />
 
             <motion.div
               className="flex gap-4 md:gap-6 whitespace-nowrap"
-              // Alterna direção: Linhas pares (0, 2) vão pra esquerda, ímpares (1, 3) pra direita
               animate={{ x: rowIndex % 2 === 0 ? ["0%", "-50%"] : ["-50%", "0%"] }}
               transition={{ 
                 repeat: Infinity, 
                 ease: "linear", 
-                // Ajusta velocidade levemente para cada linha para dar um efeito orgânico
                 duration: 20 + (rowIndex * 2) 
               }}
             >
-              {/* Duplicamos os itens para o loop infinito */}
               {[...rowItems, ...rowItems].map((tech, index) => (
                 <div
                   key={`${rowIndex}-${index}`}
@@ -114,7 +104,6 @@ function StackSection() {
           </div>
         ))}
       </div>
-
     </section>
   );
 }

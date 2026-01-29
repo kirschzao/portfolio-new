@@ -1,23 +1,146 @@
 {
   "nav": {
-    "menu": "Menü",
-    "work": "Arbeit",
-    "contact": "Kontakt",
+    "about": "Über Mich",
+    "home": "Startseite",
+    "who_am_i": "Wer bin ich?",
+    "moments": "Momente",
+    "projects": "Projekte",
+    "contacts": "Kontakte",
     "language": "Sprache",
     "select": "Auswählen"
   },
   "hero": {
     "greeting": "HALLO, ICH BIN",
-    "role1": "Bernardo Kirsch",
-    "role2": "Full Stack Dev",
-    "role3": "Creative Coder",
-    "description": "Entwickler mit Leidenschaft für moderne, schnelle und wirkungsvolle digitale Erlebnisse.",
-    "scroll": "Scrollen"
+    "role1": "Bernardo Kirsch,",
+    "role2": "Cloud Developer,",
+    "role3": "Tech Enthusiast.",
+    "description": "Entwickler mit Leidenschaft für moderne, schnelle und wirkungsvolle digitale Erlebnisse. Immer darauf bedacht, Menschen durch Technologie zu helfen."
+  },
+  "timeline": {
+    "title_part1": "Meine Berufliche",
+    "title_part2": "Reise",
+    "exp1": {
+      "title": "Cloud Developer",
+      "period": "2026 - Heute",
+      "description": "Erstellung echter Lösungen, die die digitale Transformation von Unternehmen weltweit vorantreiben..."
+    },
+    "exp2": {
+      "title": "DevOps Engineer",
+      "description": "Aktive Teilnahme an den Lebenszyklen verschiedener Projekte, Sicherstellung der Ausrichtung von Entwicklungs- und Produktpipelines. Meine Beiträge reichen vom Backlog-Verständnis bis zum AWS-Infrastrukturmanagement."
+    },
+    "exp3": {
+      "title": "Backend Developer",
+      "description": "Fokus auf die Entwicklung skalierbarer RESTful-APIs und die Optimierung von Datenbanken zur Verbesserung der Webanwendungsleistung."
+    },
+    "exp4": {
+      "title": "Entwicklungspraktikant",
+      "description": "Entwicklung von Funktionen für das interne Schulsystem, mit Fokus auf Benutzerfreundlichkeit und Optimierung administrativer Prozesse."
+    }
   },
   "sections": {
-    "about": "Über Mich",
-    "projects": "Meine Projekte",
-    "stack": "Mein Stack",
-    "contact_title": "Lass uns reden?"
+    "projects_part1": "Meine",
+    "projects_part2": "Projekte",
+    "projects_desc": "Hier sind einige der Arbeiten, die ich entwickelt habe. Fokus auf Leistung, Benutzererfahrung und sauberem Code."
+  },
+  "projects": {
+    "view_github": "Github ansehen",
+    "view_full": "Vollständiges Portfolio",
+    "beasybot": {
+      "description_short": "Ein externer KI-Agent, der als Senior Consultant fungiert und das gesamte Unternehmenswissen zentralisiert.",
+      "description_long_p1": "Ein externer KI-Agent, der als Senior Consultant fungiert und das gesamte Unternehmenswissen zentralisiert und verarbeitet — einschließlich Sitzungsprotokollen, Dokumenten und strategischen Berichten.",
+      "description_long_p2": "Meine Verantwortung im Projekt war umfassend und deckte einen Großteil der Entwicklungspipeline ab. Ich war von der Umfangsdefinition bis zum Deployment auf AWS tätig."
+    },
+    "donation": {
+      "title": "Spendenplattform",
+      "description_short": "Anwendung, die Spenden für die Institution Pão dos Pobres erleichtert und einfache sowie sichere Beiträge ermöglicht.",
+      "description_long_p1": "Anwendung, die Spenden für die Institution Pão dos Pobres erleichtert und Benutzern einfache und sichere Beiträge ermöglicht.",
+      "description_long_p2": "Obwohl mein anfänglicher Fokus auf Frontend mit React und ShadCn lag, übernahm ich zusätzliche Verantwortung für die Integration mit AWS-Diensten (S3, SES)."
+    },
+    "meeting": {
+      "description_short": "KI-Meeting-Rekorder, der Meetings in Echtzeit transkribiert, zusammenfasst und hervorhebt.",
+      "description_long_p1": "Mein eigener KI-gestützter Meeting-Rekorder, der Meetings in Echtzeit transkribiert, zusammenfasst und wichtige Punkte hervorhebt.",
+      "description_long_p2": "Ich habe eine grafische Umgebung innerhalb einer EC2 mit Xvfb simuliert, sodass Selenium Google Meet ohne echte grafische Oberfläche bedienen konnte."
+    },
+    "lobo": {
+      "description_long_p1": "Lobo Guará war eine Initiative zur Unterstützung von Migranten in Brasilien. Die Idee entstand während des 5. Innovationsmarathons der PUCRS.",
+      "description_long_p2": "Ich habe hauptsächlich an der Erstellung der Anwendungsoberfläche gearbeitet, um meine Frontend-Kenntnisse zu stärken."
+    },
+    "all_projects_title": "Meine Projekte",
+    "all_projects_desc": "Eine detaillierte Sammlung meiner Arbeiten, fokussiert auf die Lösung echter Probleme mit sauberem und effizientem Code.",
+    "repo": "Repository",
+    "view_image": "Bild ansehen"
+  },
+  "stack": {
+    "title_part1": "Mein",
+    "title_part2": "Stack",
+    "description": "Werkzeuge und Technologien, die ich täglich nutze."
+  },
+  "bento": {
+    "title_part1": "Lass uns",
+    "title_part2": "reden?",
+    "description": "Finde mich in den sozialen Medien oder sende eine Nachricht."
+  },
+  "about": {
+    "title_part1": "Über",
+    "title_part2": "Mich",
+    "who_am_i": {
+      "title": "Wer bin ich?",
+      "p1": "Hallo! Mein Name ist Bernardo Kirsch, ich bin Softwareentwickler mit Fokus auf Backend und leidenschaftlich daran interessiert, technologische Lösungen zu schaffen, die einen Unterschied machen.",
+      "p2": "Heute liegt mein Hauptfokus auf der Cloud-Umgebung, wo ich mein Wissen anwenden kann, um skalierbare und effiziente Anwendungen zu entwickeln."
+    },
+    "education": {
+      "title": "Studium und Bildung",
+      "p1": "Derzeit studiere ich Software Engineering an der PUC-RS und Angewandte Mathematik an der UFRGS, wobei ich Logik und Technologie verbinde, um komplexe Probleme zu lösen.",
+      "p2": "Davor habe ich mein Abitur am Colégio Pastor Dohms gemacht, wo ich eine solide Grundlage in exakten Wissenschaften und der deutschen Sprache entwickelt habe."
+    },
+    "hobbies": {
+      "title": "Jenseits des Codes",
+      "p1": "Wenn ich nicht programmiere, liebe ich es, mit Freunden auszugehen und neue Orte kennenzulernen. Die Welt um mich herum zu erkunden, inspiriert mich.",
+      "p2": "Ich liebe auch Musik, sie hilft mir, fokussiert zu bleiben. Es gibt nichts Besseres als Kaffee, Code und Bad Bunny auf den Kopfhörern."
+    },
+    "certs_title_part1": "Meine",
+    "certs_title_part2": "Zertifizierungen",
+    "click_zoom": "Klicken Sie auf das Bild, um das Zertifikat zu vergrößern",
+    "view_cert": "Zertifikat ansehen",
+    "no_image": "Kein Bild verfügbar",
+    "certs": {
+      "cert1_desc": "Warten...",
+      "cert2_desc": "Zertifizierung mit Fokus auf Best Practices der Softwareentwicklung, Clean Code Prinzipien und Design Patterns.",
+      "cert3_desc": "Kompletter Fullstack-Webentwicklungskurs, von Frontend mit React bis Backend mit Node.js."
+    }
+  },
+  "moments": {
+    "item1": {
+      "title": "Mein ewiges Team",
+      "desc": "Wie das Dreamteam von 92"
+    },
+    "item2": {
+      "desc": "Eines der größten Startup-Events. Habe dort viel Networking betrieben."
+    },
+    "item3": {
+      "title": "Noch ein South Summit",
+      "desc": "Eines der größten Startup-Events. Habe dort viel Networking betrieben."
+    },
+    "item4": { "desc": "Mein Forschungs- und Projektteam" },
+    "item5": { "title": "Mein erster Hackathon" },
+    "item6": {
+      "title": "Mein Aufnahmeritual",
+      "desc": "Wo ich die Menschen traf, die mein Leben voranbrachten"
+    },
+    "item7": { "title": "Ein neues Jahr" },
+    "item8": {
+      "title": "Meine Familie",
+      "desc": "Die Unterstützung, die mich weitermachen lässt"
+    },
+    "item9": { "title": "Dev Setup", "desc": "Meine kreative Ecke" },
+    "item10": { "desc": "Der letzte deutsche Ball" },
+    "item11": {
+      "title": "Hervorgehobenes Projekt",
+      "desc": "Das Projekt, das mir an der Universität Anerkennung einbrachte"
+    },
+    "item12": {
+      "title": "Eine große 10",
+      "desc": "10 in der Prüfung für Analysis I"
+    }
   }
 }
