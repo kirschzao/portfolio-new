@@ -1,23 +1,140 @@
 {
   "nav": {
-    "menu": "Menu",
-    "work": "Work",
-    "contact": "Contact",
+    "about": "About Me",
+    "home": "Home",
+    "who_am_i": "Who am I?",
+    "moments": "Moments",
+    "projects": "Projects",
+    "contacts": "Contacts",
     "language": "Language",
     "select": "Select"
   },
   "hero": {
     "greeting": "HELLO, I AM",
-    "role1": "Bernardo Kirsch",
-    "role2": "Full Stack Dev",
-    "role3": "Creative Coder",
-    "description": "Developer passionate about creating modern, fast, and impactful digital experiences.",
-    "scroll": "Scroll"
+    "role1": "Bernardo Kirsch,",
+    "role2": "Cloud Developer,",
+    "role3": "Tech Enthusiast.",
+    "description": "Developer passionate about creating modern, fast, and impactful digital experiences. Always looking to help people through technology."
+  },
+  "timeline": {
+    "title_part1": "My Professional",
+    "title_part2": "Journey",
+    "exp1": {
+      "title": "Cloud Developer",
+      "period": "2026 - Present",
+      "description": "Creating real solutions that drive digital transformation for companies worldwide..."
+    },
+    "exp2": {
+      "title": "DevOps Engineer",
+      "description": "Actively participated in the life cycles of several projects, ensuring that the development and product pipeline remained aligned. My main contributions range from backlog understanding to AWS infrastructure management."
+    },
+    "exp3": {
+      "title": "Backend Developer",
+      "description": "Focused on developing scalable RESTful APIs and optimizing databases to improve web application performance."
+    },
+    "exp4": {
+      "title": "Development Intern",
+      "description": "Developing features for the school's internal system, focusing on user experience improvements and administrative process optimization."
+    }
   },
   "sections": {
-    "about": "About Me",
-    "projects": "My Projects",
-    "stack": "My Stack",
-    "contact_title": "Let's Talk?"
+    "projects_part1": "My",
+    "projects_part2": "Projects",
+    "projects_desc": "Here are some of the works I developed. Focused on performance, user experience, and clean code."
+  },
+  "projects": {
+    "view_github": "View Github",
+    "view_full": "View Full Portfolio",
+    "beasybot": {
+      "description_short": "An external AI agent acting as a senior consultant, centralizing and processing all company knowledge.",
+      "description_long_p1": "An external AI agent acting as a senior consultant, centralizing and processing all company knowledge — including meeting minutes, documents, and strategic reports.",
+      "description_long_p2": "My responsibility in the project was comprehensive, covering much of the development pipeline. I acted from scope definition to deployment on AWS."
+    },
+    "donation": {
+      "title": "Donation Platform",
+      "description_short": "Application facilitating donations to the Pão dos Pobres institution, allowing simple and secure contributions.",
+      "description_long_p1": "Application that facilitates donations to the Pão dos Pobres institution, allowing users to contribute simply and securely.",
+      "description_long_p2": "Although my initial focus was Frontend with React and ShadCn, I assumed additional responsibility for integration with AWS services (S3, SES)."
+    },
+    "meeting": {
+      "description_short": "AI meeting recorder that transcribes, summarizes, and highlights key points in real-time.",
+      "description_long_p1": "My own AI-powered meeting recorder that transcribes, summarizes, and highlights key points from meetings in real-time.",
+      "description_long_p2": "I simulated a graphical environment inside an EC2 using Xvfb, allowing Selenium to operate Google Meet without a real graphical interface."
+    },
+    "lobo": {
+      "description_long_p1": "Lobo Guará was an initiative aimed at helping migrants in Brazil. The idea emerged during the 5th PUCRS Innovation Marathon.",
+      "description_long_p2": "I mainly worked on building the application interface to strengthen my front-end knowledge."
+    },
+    "all_projects_title": "My Projects",
+    "all_projects_desc": "A detailed collection of the works I developed, focused on solving real problems with clean and efficient code.",
+    "repo": "Repository",
+    "view_image": "View Image"
+  },
+  "stack": {
+    "title_part1": "My",
+    "title_part2": "Stack",
+    "description": "Tools and technologies I use daily."
+  },
+  "bento": {
+    "title_part1": "Let's",
+    "title_part2": "Talk?",
+    "description": "Find me on social media or send a message."
+  },
+  "about": {
+    "title_part1": "About",
+    "title_part2": "Me",
+    "who_am_i": {
+      "title": "Who Am I?",
+      "p1": "Hello! My name is Bernardo Kirsch, I am a software developer focused on backend and passionate about creating technological solutions that make a difference.",
+      "p2": "Today, my main focus is the cloud environment, where I can apply my knowledge to develop scalable and efficient applications."
+    },
+    "education": {
+      "title": "College and Education",
+      "p1": "Currently, I am studying Software Engineering at PUC-RS and Applied Mathematics at UFRGS, combining logic and technology to solve complex problems.",
+      "p2": "Before that, I completed high school at Pastor Dohms College, where I developed a solid foundation in exact sciences and the German language."
+    },
+    "hobbies": {
+      "title": "Beyond Code",
+      "p1": "When I'm not coding, I love going out with my friends and discovering new places. I believe exploring the world around me inspires me.",
+      "p2": "I also love music, which helps me stay focused. There's nothing better than coffee, code, and Bad Bunny on headphones."
+    },
+    "certs_title_part1": "My",
+    "certs_title_part2": "Certifications",
+    "click_zoom": "Click the image to zoom the certificate",
+    "view_cert": "View Certificate",
+    "no_image": "No image available",
+    "certs": {
+      "cert1_desc": "Waiting...",
+      "cert2_desc": "Certification focused on software development best practices, covering clean code principles and design patterns.",
+      "cert3_desc": "Complete fullstack web development course, covering from frontend with React to backend with Node.js."
+    }
+  },
+  "moments": {
+    "item1": { "title": "My Eternal Team", "desc": "Like the '92 dream team" },
+    "item2": {
+      "desc": "One of the biggest startup events. Did a lot of networking there."
+    },
+    "item3": {
+      "title": "Another South Summit",
+      "desc": "One of the biggest startup events. Did a lot of networking there."
+    },
+    "item4": { "desc": "My Research and Project team" },
+    "item5": { "title": "My First Hackathon" },
+    "item6": {
+      "title": "My Hazing",
+      "desc": "Where I met the people who boosted my life"
+    },
+    "item7": { "title": "A New Year" },
+    "item8": {
+      "title": "My Family",
+      "desc": "The support that keeps me going"
+    },
+    "item9": { "title": "Dev Setup", "desc": "My creation corner" },
+    "item10": { "desc": "The last German ball" },
+    "item11": {
+      "title": "Highlight Project",
+      "desc": "The project that earned me recognition at the university"
+    },
+    "item12": { "title": "A Big 10", "desc": "10 on the Calculus I exam" }
   }
 }

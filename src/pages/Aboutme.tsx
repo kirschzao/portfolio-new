@@ -3,70 +3,68 @@ import { motion, AnimatePresence } from "framer-motion";
 import LiquidEther from "../components/LiquidEther"; 
 import Timeline from "../components/timeline"; 
 import { X } from "lucide-react";
-
-const aboutSections = [
-  {
-    id: 1,
-    title: "Quem Eu Sou?",
-    content: [
-      "Olá! Meu nome é Bernardo Kirsch, sou um desenvolvedor de software, focado em backend e apaixonado por criar soluções tecnológicas que fazem a diferença. Com experiência em diversas linguagens de programação e frameworks, busco sempre aprimorar minhas habilidades e aprender novas tecnologias.",
-      "Hoje, meu foco principal é o ambiente em nuvem, onde posso aplicar meus conhecimentos para desenvolver aplicações escaláveis e eficientes. Adoro enfrentar desafios técnicos e encontrar soluções inovadoras para problemas complexos."
-    ],
-    image: " https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG-20230727-WA0180_Original.jpg"
-  },
-  {
-    id: 2,
-    title: "Faculdade e Educação",
-    content: [
-      "Atualmente, estou cursando Engenharia de Software na PUC-RS e Matemática Aplicada na UFRGS, unindo lógica e tecnologia para solucionar problemas complexos. Minha abordagem é direcionada para colaboração e inovação, sempre buscando criar impacto positivo por meio de soluções tecnológicas acessíveis e eficazes.",
-      "Antes disso, concluí o ensino médio no Colégio Pastor Dohms, onde desenvolvi uma base sólida em ciências exatas e lingua alemã.",
-
-    ],
-    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1748986111142.jpeg"
-  },
-  {
-    id: 3,
-    title: "Além do Código",
-    content: [
-      "Quando não estou codando, adoro sair da com meus amigos e conhecer novos lugares. Acredito que explorar o mundo ao meu redor me inspira a trazer novas perspectivas para meus projetos.",
-      "Também gosto muito de música, a musica é uma grande parte da minha vida e me ajuda a manter o foco e a criatividade enquanto trabalho. Não existe nada melhot que café, codígo e Bad Bunny no fone."
-    ],
-    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG-20230806-WA0031_Original.jpg"
-  }
-];
-
-const certifications = [
-  {
-    id: "cert1",
-    title: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    description: "Esperando...",
-    image: null
-  },
-  {
-    id: "cert2",
-    title: "Clean Code",
-    issuer: "RocketSeat",
-    description: "Certificação focada em boas práticas de desenvolvimento de software, abordando princípios de código limpo, design patterns e técnicas para melhorar a legibilidade e manutenção do código.",
-    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Imagem%2014-12-2025%20a%CC%80s%2019.11.jpg"
-  },
-  {
-    id: "cert3",
-    title: "Fullstack Developer Course",
-    issuer: "RocketSeat",
-    description: "Curso completo de desenvolvimento web fullstack, abrangendo desde o frontend com React até o backend com Node.js, incluindo banco de dados, autenticação e deploy.",
-    image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Imagem.png"
-  }
-];
+import { useTranslation } from "react-i18next";
 
 export default function AboutMe() {
-  // Estado para controlar o Modal de Imagem
+  const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const aboutSections = [
+    {
+      id: 1,
+      title: t('about.who_am_i.title'),
+      content: [
+        t('about.who_am_i.p1'),
+        t('about.who_am_i.p2')
+      ],
+      image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG-20230727-WA0180_Original.jpg"
+    },
+    {
+      id: 2,
+      title: t('about.education.title'),
+      content: [
+        t('about.education.p1'),
+        t('about.education.p2'),
+      ],
+      image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1748986111142.jpeg"
+    },
+    {
+      id: 3,
+      title: t('about.hobbies.title'),
+      content: [
+        t('about.hobbies.p1'),
+        t('about.hobbies.p2')
+      ],
+      image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG-20230806-WA0031_Original.jpg"
+    }
+  ];
+
+  const certifications = [
+    {
+      id: "cert1",
+      title: "AWS Certified Cloud Practitioner",
+      issuer: "Amazon Web Services",
+      description: t('about.certs.cert1_desc'),
+      image: null
+    },
+    {
+      id: "cert2",
+      title: "Clean Code",
+      issuer: "RocketSeat",
+      description: t('about.certs.cert2_desc'),
+      image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Imagem%2014-12-2025%20a%CC%80s%2019.11.jpg"
+    },
+    {
+      id: "cert3",
+      title: "Fullstack Developer Course",
+      issuer: "RocketSeat",
+      description: t('about.certs.cert3_desc'),
+      image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Imagem.png"
+    }
+  ];
 
   return (
     <div className="w-full min-h-screen bg-black relative overflow-hidden flex flex-col items-center pt-48 pb-24">
-
-      {/* Fundo Animado */}
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
         <LiquidEther
             colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
@@ -96,9 +94,9 @@ export default function AboutMe() {
             className="text-center w-full mb-12"
         >
             <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight">
-            Sobre{" "}
+            {t('about.title_part1')}{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                Mim
+                {t('about.title_part2')}
             </span>
             </h1>
         </motion.div>
@@ -151,9 +149,9 @@ export default function AboutMe() {
                 className="text-center mb-16"
             >
                 <h2 className="text-5xl md:text-8xl font-bold text-white leading-none">
-                    Minha Jornada <br />
+                    {t('timeline.title_part1')} <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                    Profissional
+                    {t('timeline.title_part2')}
                     </span>
                 </h2>
             </motion.div>
@@ -178,9 +176,9 @@ export default function AboutMe() {
                 className="text-center mb-16"
             >
                 <h2 className="text-5xl md:text-8xl font-bold text-white leading-none">
-                    Minhas <br />
+                    {t('about.certs_title_part1')} <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                    Certificações
+                    {t('about.certs_title_part2')}
                     </span>
                 </h2>
             </motion.div>
@@ -191,7 +189,6 @@ export default function AboutMe() {
 
                  return (
                   <div key={cert.id} className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
-                      
                       <motion.div 
                           initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                           whileInView={{ opacity: 1, x: 0 }}
@@ -209,7 +206,7 @@ export default function AboutMe() {
                           </div>
                           <p>{cert.description}</p>
                           <p className="text-sm text-gray-500 mt-2 italic">
-                            (Clique na imagem ao lado para ampliar o certificado)
+                            ({t('about.click_zoom')})
                           </p>
                       </motion.div>
 
@@ -228,9 +225,7 @@ export default function AboutMe() {
                             onClick={() => setSelectedImage(cert.image)}
                           >
                               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/40 to-pink-600/40 rounded-3xl blur-3xl -z-10 animate-pulse-slow" />
-                              
                               <div className="w-full h-full rounded-3xl border-[6px] border-neutral-900/80 shadow-2xl overflow-hidden backdrop-blur-sm transform group-hover:scale-[1.02] transition-transform duration-500">
-                                  
                                   {cert.image ? (
                                       <img
                                           src={cert.image}
@@ -239,25 +234,22 @@ export default function AboutMe() {
                                       />
                                   ) : (
                                       <div className="w-full h-full bg-neutral-800 flex items-center justify-center">
-                                          <span className="text-gray-400">Sem imagem disponível</span>
+                                          <span className="text-gray-400">{t('about.no_image')}</span>
                                       </div>
                                   )}
                                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                       <span className="text-white font-medium bg-black/50 px-4 py-2 rounded-full border border-white/20">
-                                        Ver Certificado
+                                        {t('about.view_cert')}
                                       </span>
                                   </div>
                               </div>
                           </div>
                       </motion.div>
-
                   </div>
                  )
               })}
             </div>
-
         </div>
-
       </div>
 
       <AnimatePresence>
@@ -275,7 +267,6 @@ export default function AboutMe() {
             >
               <X size={40} />
             </button>
-
             <motion.img
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -288,7 +279,6 @@ export default function AboutMe() {
           </motion.div>
         )}
       </AnimatePresence>
-
     </div>
   );
 }

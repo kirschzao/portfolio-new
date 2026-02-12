@@ -1,23 +1,140 @@
 {
   "nav": {
-    "menu": "Menu",
-    "work": "Work",
-    "contact": "Contact",
-    "language": "Language",
-    "select": "Select"
+    "about": "Sobre Mim",
+    "home": "Home",
+    "who_am_i": "Quem eu sou?",
+    "moments": "Memórias",
+    "projects": "Projetos",
+    "contacts": "Contatos",
+    "language": "Idioma",
+    "select": "Selecionar"
   },
   "hero": {
-    "greeting": "HELLO, I AM",
-    "role1": "Bernardo Kirsch",
-    "role2": "Full Stack Dev",
-    "role3": "Creative Coder",
-    "description": "Developer passionate about creating modern, fast, and impactful digital experiences.",
-    "scroll": "Scroll"
+    "greeting": "OLÁ, EU SOU",
+    "role1": "Bernardo Kirsch,",
+    "role2": "Cloud Developer,",
+    "role3": "Tech Enthusiast.",
+    "description": "Desenvolvedor apaixonado por criar experiências digitais modernas, rápidas e impactantes. Sempre buscando ajudar as pessoas através da tecnologia."
+  },
+  "timeline": {
+    "title_part1": "Minha Jornada",
+    "title_part2": "Profissional",
+    "exp1": {
+      "title": "Desenvolvedor Cloud",
+      "period": "2026 - Presente",
+      "description": "Criando soluções reais que impulsionam a transformação digital de empresas no mundo todo..."
+    },
+    "exp2": {
+      "title": "Engenheiro DevOps",
+      "description": "Participei ativamente dos ciclos de vida de diversos projetos, garantindo que a esteira de desenvolvimento e produto sempre fique alinhada. Minhas principais contribuições abrangem desde o entendimento do backlog até a gestão de infraestrutura AWS."
+    },
+    "exp3": {
+      "title": "Desenvolvedor Backend",
+      "description": "Focado no desenvolvimento de APIs RESTful escaláveis e na otimização de bancos de dados para melhorar a performance das aplicações web."
+    },
+    "exp4": {
+      "title": "Estagiário de Desenvolvimento",
+      "description": "Desenvolvimento de funcionalidades para o sistema interno da escola, focando em melhorias na experiência do usuário e otimização de processos administrativos."
+    }
   },
   "sections": {
-    "about": "About Me",
-    "projects": "My Projects",
-    "stack": "My Stack",
-    "contact_title": "Let's Talk?"
+    "projects_part1": "Meus",
+    "projects_part2": "Projetos",
+    "projects_desc": "Aqui estão alguns dos trabalhos que desenvolvi. Focados em performance, experiência do usuário e código limpo."
+  },
+  "projects": {
+    "view_github": "Ver Github",
+    "view_full": "Ver Portfolio Completo",
+    "beasybot": {
+      "description_short": "Um agente de IA externo que atua como um consultor sênior, centralizando e processando todo o conhecimento da empresa.",
+      "description_long_p1": "Um agente de IA externo que atua como um consultor sênior, centralizando e processando todo o conhecimento da empresa — incluindo atas de reuniões, documentos e relatórios estratégicos.",
+      "description_long_p2": "Minha responsabilidade no projeto foi abrangente, cobrindo grande parte da pipeline de desenvolvimento. Atuei desde a definição do escopo até o deploy na AWS."
+    },
+    "donation": {
+      "title": "Plataforma de Doação",
+      "description_short": "Aplicação que facilita doações para a instituição Pão dos Pobres, permitindo contribuições simples e seguras.",
+      "description_long_p1": "Aplicação que facilita doações para a instituição Pão dos Pobres, permitindo que usuários contribuam de forma simples e segura.",
+      "description_long_p2": "Embora meu foco inicial fosse o Frontend com React e ShadCn, assumi a responsabilidade adicional pela integração com os serviços da AWS (S3, SES)."
+    },
+    "meeting": {
+      "description_short": "Gravador de reuniões com IA que transcreve, resume e destaca os pontos principais em tempo real.",
+      "description_long_p1": "Meu próprio gravador de reuniões alimentado por IA que transcreve, resume e destaca os pontos principais das reuniões em tempo real.",
+      "description_long_p2": "Simulei um ambiente gráfico dentro de uma EC2 usando Xvfb, permitindo que o Selenium operasse o Google Meet sem interface gráfica real."
+    },
+    "lobo": {
+      "description_long_p1": "Lobo Guará foi uma iniciativa voltada a auxiliar migrantes no Brasil. A ideia surgiu durante a 5ª Maratona de Inovação da PUCRS.",
+      "description_long_p2": "Atuei principalmente na construção da interface da aplicação para fortalecer meus conhecimentos em front-end."
+    },
+    "all_projects_title": "Meus Projetos",
+    "all_projects_desc": "Uma coleção detalhada dos trabalhos que desenvolvi, focados em resolver problemas reais com código limpo e eficiente.",
+    "repo": "Repositório",
+    "view_image": "Ver Imagem"
+  },
+  "stack": {
+    "title_part1": "Minha",
+    "title_part2": "Stack",
+    "description": "Ferramentas e tecnologias que uso no dia a dia."
+  },
+  "bento": {
+    "title_part1": "Vamos",
+    "title_part2": "Conversar?",
+    "description": "Me encontre nas redes sociais ou mande uma mensagem."
+  },
+  "about": {
+    "title_part1": "Sobre",
+    "title_part2": "Mim",
+    "who_am_i": {
+      "title": "Quem Eu Sou?",
+      "p1": "Olá! Meu nome é Bernardo Kirsch, sou um desenvolvedor de software, focado em backend e apaixonado por criar soluções tecnológicas que fazem a diferença.",
+      "p2": "Hoje, meu foco principal é o ambiente em nuvem, onde posso aplicar meus conhecimentos para desenvolver aplicações escaláveis e eficientes."
+    },
+    "education": {
+      "title": "Faculdade e Educação",
+      "p1": "Atualmente, estou cursando Engenharia de Software na PUC-RS e Matemática Aplicada na UFRGS, unindo lógica e tecnologia para solucionar problemas complexos.",
+      "p2": "Antes disso, concluí o ensino médio no Colégio Pastor Dohms, onde desenvolvi uma base sólida em ciências exatas e língua alemã."
+    },
+    "hobbies": {
+      "title": "Além do Código",
+      "p1": "Quando não estou codando, adoro sair com meus amigos e conhecer novos lugares. Acredito que explorar o mundo ao meu redor me inspira.",
+      "p2": "Também gosto muito de música, que me ajuda a manter o foco. Não existe nada melhor que café, código e Bad Bunny no fone."
+    },
+    "certs_title_part1": "Minhas",
+    "certs_title_part2": "Certificações",
+    "click_zoom": "Clique na imagem ao lado para ampliar o certificado",
+    "view_cert": "Ver Certificado",
+    "no_image": "Sem imagem disponível",
+    "certs": {
+      "cert1_desc": "Esperando...",
+      "cert2_desc": "Certificação focada em boas práticas de desenvolvimento de software, abordando princípios de código limpo e design patterns.",
+      "cert3_desc": "Curso completo de desenvolvimento web fullstack, abrangendo desde o frontend com React até o backend com Node.js."
+    }
+  },
+  "moments": {
+    "item1": { "title": "Meu Eterno Time", "desc": "Como o dreamteam de 92" },
+    "item2": {
+      "desc": "Um dos maiores eventos de startups. Fiz muito Networking lá."
+    },
+    "item3": {
+      "title": "Mais um South Summit",
+      "desc": "Um dos maiores eventos de startups. Fiz muito Networking lá."
+    },
+    "item4": { "desc": "Meu time de Projeto e Pesquisa" },
+    "item5": { "title": "Minha Primeira Hackatona" },
+    "item6": {
+      "title": "Meu Trote",
+      "desc": "Onde eu conheci as pessoas que impulsionaram minha vida"
+    },
+    "item7": { "title": "Um ano novo" },
+    "item8": {
+      "title": "Minha família",
+      "desc": "O suporte que me faz seguir em frente"
+    },
+    "item9": { "title": "Setup de Dev", "desc": "Meu cantinho de criação" },
+    "item10": { "desc": "O último baile alemão" },
+    "item11": {
+      "title": "Projeto Destaque",
+      "desc": "O projeto que me rendeu reconhecimento na universidade"
+    },
+    "item12": { "title": "Um grande 10", "desc": "10 na prova de Cálculo I" }
   }
 }

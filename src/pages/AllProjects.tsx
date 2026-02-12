@@ -3,87 +3,86 @@ import { motion, AnimatePresence } from "framer-motion";
 import LiquidEther from "../components/LiquidEther";
 import { Github, ExternalLink, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-
-const allProjects = [
-  {
-    id: 1,
-    title: "Beasybot",
-    description: [
-      "Um agente de IA externo que atua como um consultor sênior, centralizando e processando todo o conhecimento da empresa — incluindo atas de reuniões, documentos e relatórios estratégicos.",
-      "Minha responsabilidade no projeto foi abrangente, cobrindo grande parte da pipeline de desenvolvimento. Atuei desde a definição do escopo e a elaboração das user stories para o time até a entrega final e o deploy da aplicação. Além das valiosas habilidades de gestão de equipe que desenvolvi, este projeto me proporcionou um aprofundamento significativo em infraestrutura AWS e em como arquitetar projetos escaláveis."
-    ],
-    technologies: ["Nest.js", "RAG", "Langchain", "OpenAI API", "AWS","Embeddings"],
-    repoLink: "https://github.com/Beasy-Box-Company",
-    demoLink: "https://app.beasybox.tech/",
-    images: [
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253025291.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253025448.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024870.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024646.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024706.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024533.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024782.jpeg"
-
-    ]
-  },
-  {
-    id: 2,
-    title: "Plataforma de Doação",
-    description: [
-     "Aplicação que facilita doações para a instituição Pao dos Pobres, permitindo que usuários contribuam de forma simples e segura.",
-      "Embora meu foco inicial no time fosse o desenvolvimento das interfaces e componentes do Frontend com React e ShadCn, assumi a responsabilidade adicional pela integração com os serviços da AWS, especificamente S3 e SES, e posteriormente na integração com a API principal do projeto."
-    ],
-    technologies: ["React", "ShadCn","TailwindCss", "AWS", "S3", "SES"],
-    repoLink: "https://tools.ages.pucrs.br/plataforma-de-doa-es-para-o-p-o-dos-pobres/",
-    demoLink: null,
-    images: [
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255282700.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255280789.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255280067.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255282749.jpeg",
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255279914.jpeg"
-    ]
-  },
-  {
-    id: 3,
-    title: "MeetingRecorder Bot",
-    description: [
-      "Meu próprio gravador de reuniões alimentado por IA que transcreve, resume e destaca os pontos principais das reuniões em tempo real.",
-      "Para reduzir custos, simulei um ambiente gráfico dentro de uma EC2 usando Xvfb, permitindo que o Selenium operasse o Google Meet sem uma interface gráfica real. Reagino a operações do usuário, como expulsões e reconexões, garantindo que o bot se comporte como um participante humano típico."],
-    technologies: ["Python", "Docker", "Selenium", "Ffmpeg", "Xvfb"],
-    repoLink: "https://github.com/kirschzao/MeetingRecorder-Bot",
-    demoLink: null,
-    images: [
-      "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG_3123.jpeg"
-
-    ]
-  },
-  {
-    id: 4,
-    title: "Lobo Guará App",
-    description: [
-      "Lobo Guará foi uma iniciativa voltada a auxiliar migrantes no Brasil. A ideia, que surgiu durante a 5ª Maratona de Inovação da PUCRS, foi destaque no eixo de Sociedade e Desenvolvimento.",
-      "Atuei principalmente na construção da interface da aplicação. Escolhi essa área para fortalecer meus conhecimentos em front-end, já que minha experiência era muito mais focada em aplicações back-end. Criei telas responsivas e dinâmicas, além de realizar as integrações necessárias."],
-    technologies: ["ReactJs", "TanStack", "TailwindCss", "ShadCn"],
-    repoLink: "https://tools.ages.pucrs.br/lobo-guara",
-    demoLink: null,
-    images: [
-      "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181269562.jpeg",
-      "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181268768.jpeg",
-      "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181280884.jpeg",
-      "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181282436.jpeg"
-
-    ]
-  }
-];
+import { useTranslation } from "react-i18next";
 
 export default function AllProjects() {
+  const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const allProjects = [
+    {
+      id: 1,
+      title: "Beasybot",
+      description: [
+        t('projects.beasybot.description_long_p1'),
+        t('projects.beasybot.description_long_p2')
+      ],
+      technologies: ["Nest.js", "RAG", "Langchain", "OpenAI API", "AWS","Embeddings"],
+      repoLink: "https://github.com/Beasy-Box-Company",
+      demoLink: "https://app.beasybox.tech/",
+      images: [
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253025291.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253025448.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024870.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024646.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024706.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024533.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024782.jpeg"
+      ]
+    },
+    {
+      id: 2,
+      title: t('projects.donation.title'),
+      description: [
+       t('projects.donation.description_long_p1'),
+       t('projects.donation.description_long_p2')
+      ],
+      technologies: ["React", "ShadCn","TailwindCss", "AWS", "S3", "SES"],
+      repoLink: "https://tools.ages.pucrs.br/plataforma-de-doa-es-para-o-p-o-dos-pobres/",
+      demoLink: null,
+      images: [
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255282700.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255280789.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255280067.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255282749.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765255279914.jpeg"
+      ]
+    },
+    {
+      id: 3,
+      title: "MeetingRecorder Bot",
+      description: [
+        t('projects.meeting.description_long_p1'),
+        t('projects.meeting.description_long_p2')
+      ],
+      technologies: ["Python", "Docker", "Selenium", "Ffmpeg", "Xvfb"],
+      repoLink: "https://github.com/kirschzao/MeetingRecorder-Bot",
+      demoLink: null,
+      images: [
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/IMG_3123.jpeg"
+      ]
+    },
+    {
+      id: 4,
+      title: "Lobo Guará App",
+      description: [
+        t('projects.lobo.description_long_p1'),
+        t('projects.lobo.description_long_p2')
+      ],
+      technologies: ["ReactJs", "TanStack", "TailwindCss", "ShadCn"],
+      repoLink: "https://tools.ages.pucrs.br/lobo-guara",
+      demoLink: null,
+      images: [
+        "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181269562.jpeg",
+        "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181268768.jpeg",
+        "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181280884.jpeg",
+        "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181282436.jpeg"
+      ]
+    }
+  ];
 
   return (
     <div className="w-full min-h-screen bg-black relative overflow-hidden flex flex-col items-center pt-48 pb-24">
-
-      {/* Fundo Animado */}
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
         <LiquidEther
             colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
@@ -106,7 +105,6 @@ export default function AllProjects() {
 
       <div className="relative z-10 w-full max-w-7xl px-6 md:px-12 flex flex-col items-center">
         
-        {/* Título */}
         <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -114,25 +112,20 @@ export default function AllProjects() {
             className="text-center w-full mb-24"
         >
             <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight">
-            
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                Meus Projetos
+                {t('projects.all_projects_title')}
             </span>
             </h1>
             <p className="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">
-              Uma coleção detalhada dos trabalhos que desenvolvi, focados em resolver problemas reais com código limpo e eficiente.
+              {t('projects.all_projects_desc')}
             </p>
         </motion.div>
 
-        {/* Lista de Projetos */}
         <div className="flex flex-col gap-32 w-full">
             {allProjects.map((project, index) => {
                 const isEven = index % 2 === 0;
-
                 return (
                     <div key={project.id} className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start w-full">
-                        
-                        {/* --- TEXTO --- */}
                         <motion.div 
                             initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -169,7 +162,7 @@ export default function AllProjects() {
                                 className="flex items-center gap-2 px-5 py-3 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-colors"
                               >
                                 <Github size={20} />
-                                Repositório
+                                {t('projects.repo')}
                               </a>
                               {project.demoLink && (
                                 <a 
@@ -185,7 +178,6 @@ export default function AllProjects() {
                             </div>
                         </motion.div>
 
-                        {/* --- GALERIA DE FOTOS --- */}
                         <motion.div 
                             initial={{ opacity: 0, x: isEven ? 50 : -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -196,30 +188,24 @@ export default function AllProjects() {
                                 order-1 ${isEven ? 'lg:order-2' : 'lg:order-1'}
                             `}
                         >
-                            {/* IMAGEM PRINCIPAL (CAPA) */}
                             {project.images.length > 0 && (
                               <div 
                                 className="relative w-full aspect-video cursor-zoom-in group rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-neutral-900"
                                 onClick={() => setSelectedImage(project.images[0])}
                               >
-                                  {/* CORREÇÃO: Removemos a div absolute que cobria a imagem. O fundo fica no pai. */}
                                   <img
                                       src={project.images[0]}
                                       alt={`${project.title} Cover`}
-                                      // CORREÇÃO: Adicionado 'relative z-10' para garantir que a imagem fique sobre o fundo
                                       className="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                                   />
-                                  
-                                  {/* Overlay de Hover (z-20 para ficar acima da imagem) */}
                                   <div className="absolute inset-0 z-20 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <span className="text-white bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 text-sm font-medium">
-                                      Ver Imagem
+                                      {t('projects.view_image')}
                                     </span>
                                   </div>
                               </div>
                             )}
 
-                            {/* MINIATURAS */}
                             {project.images.length > 1 && (
                               <div className="grid grid-cols-3 gap-4">
                                 {project.images.slice(1).map((img, idx) => (
@@ -239,15 +225,12 @@ export default function AllProjects() {
                               </div>
                             )}
                         </motion.div>
-
                     </div>
                 );
             })}
         </div>
-
       </div>
 
-      {/* --- MODAL / LIGHTBOX --- */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
@@ -263,7 +246,6 @@ export default function AllProjects() {
             >
               <X size={32} />
             </button>
-
             <motion.img
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -276,7 +258,6 @@ export default function AllProjects() {
           </motion.div>
         )}
       </AnimatePresence>
-
     </div>
   );
 }
