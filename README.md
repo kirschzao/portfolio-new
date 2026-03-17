@@ -43,7 +43,6 @@ O projeto foi construído utilizando uma stack moderna e robusta:
 
 - **🌐 Internacionalização (i18n):** Suporte completo e dinâmico para **Português (PT)**, **Inglês (EN)** e **Alemão (DE)**.
 - **🎨 Experiência Visual Imersiva:**
-  - **Liquid Ether:** Background interativo e fluido feito com Shaders/WebGL.
   - **Infinite 3D Menu:** Navegação estilo "esfera" para galeria de fotos.
   - **Tilted Cards:** Componentes de cards com efeito de física e perspectiva ao passar o mouse.
 - **📱 Design Responsivo:** Layout totalmente adaptável para Mobile, Tablet e Desktop.

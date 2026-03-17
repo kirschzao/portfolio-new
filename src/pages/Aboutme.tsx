@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import LiquidEther from "../components/LiquidEther"; 
+//import LiquidEther from "../components/LiquidEther"; 
 import Timeline from "../components/timeline"; 
 import { X } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -65,6 +65,8 @@ export default function AboutMe() {
 
   return (
     <div className="w-full min-h-screen bg-black relative overflow-hidden flex flex-col items-center pt-48 pb-24">
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-black via-purple-900/15 to-black animate-gradient-xy"></div>
+      {/* 
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
         <LiquidEther
             colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
@@ -84,6 +86,7 @@ export default function AboutMe() {
             autoRampDuration={0.6}
         />
       </div>
+        */}
 
       <div className="relative z-10 w-full max-w-7xl px-6 md:px-12 flex flex-col items-center">
         

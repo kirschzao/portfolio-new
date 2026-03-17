@@ -1,4 +1,4 @@
-import LiquidEther from '../components/LiquidEther';
+//import LiquidEther from '../components/LiquidEther';
 import Hero from './hero';
 import SecondSection from './secondsection';
 import ThirdSection from './thirdsection';
@@ -8,7 +8,8 @@ import StackSection from './stacksection';
 function MainSection() {
   return (
     <div className="w-full min-h-screen bg-black relative overflow-hidden">
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-black via-purple-900/15 to-black animate-gradient-xy"></div>
+        {/*
             <LiquidEther
                 colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
                 mouseForce={20}
@@ -26,7 +27,8 @@ function MainSection() {
                 autoResumeDelay={3000}
                 autoRampDuration={0.6}
             />
-        </div>
+            */}
+        
 
         {/* Container para o conteúdo da página, posicionado sobre o fundo (z-10) */}
         <div className="relative z-10 flex flex-col w-full">            

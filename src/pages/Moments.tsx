@@ -1,4 +1,4 @@
-import LiquidEther from "../components/LiquidEther";
+//import LiquidEther from "../components/LiquidEther";
 import InfiniteMenu from "../components/InfiniteMenu";
 import { useTranslation } from "react-i18next";
 
@@ -83,6 +83,7 @@ export default function Moments() {
   return (
     <div className="w-full h-screen bg-black relative overflow-hidden flex flex-col items-center">
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+        {/* 
         <LiquidEther
             colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
             mouseForce={20}
@@ -100,6 +101,7 @@ export default function Moments() {
             autoResumeDelay={3000}
             autoRampDuration={0.6}
         />
+        */}
       </div>
       <div className="absolute inset-0 z-10 w-full h-full">
          <InfiniteMenu items={items} />
