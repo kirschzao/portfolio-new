@@ -12,29 +12,37 @@
   "hero": {
     "greeting": "OLÁ, EU SOU",
     "role1": "Bernardo Kirsch,",
-    "role2": "Cloud Developer,",
-    "role3": "Tech Enthusiast.",
-    "description": "Desenvolvedor apaixonado por criar experiências digitais modernas, rápidas e impactantes. Sempre buscando ajudar as pessoas através da tecnologia."
+    "role2": "Software Engineer,",
+    "role3": "Cloud Architect.",
+    "description": "Engenheiro de Software com experiência prática em arquiteturas backend resilientes, plataformas SaaS com IA, sistemas distribuídos e infraestrutura cloud em escala."
   },
   "timeline": {
     "title_part1": "Minha Jornada",
     "title_part2": "Profissional",
     "exp1": {
-      "title": "Desenvolvedor Cloud",
-      "period": "2026 - Presente",
-      "description": "Criando soluções reais que impulsionam a transformação digital de empresas no mundo todo..."
+      "title": "Cloud Developer",
+      "period": "dez 2025 - Presente",
+      "description": "Na Oryza Labs (Tecnopuc), arquiteto 15+ sistemas distribuídos na AWS para clientes como Sem Parar e Shopee. Responsabilidade ponta a ponta, do design de sistema ao deploy em produção, unindo engenharia de software e infraestrutura cloud operacional."
     },
     "exp2": {
-      "title": "Engenheiro DevOps",
-      "description": "Participei ativamente dos ciclos de vida de diversos projetos, garantindo que a esteira de desenvolvimento e produto sempre fique alinhada. Minhas principais contribuições abrangem desde o entendimento do backlog até a gestão de infraestrutura AWS."
+      "title": "DevOps Developer",
+      "period": "jun 2025 - dez 2025",
+      "description": "Na Beasybox, promovido após 4 meses para liderar infraestrutura, CI/CD e performance do sistema. Implementei pipelines CI/CD com Docker, estruturei a infraestrutura cloud do zero e otimizei a latência de IA em ~40%. Escalei a plataforma para mais de 100 empresas."
     },
     "exp3": {
-      "title": "Desenvolvedor Backend",
-      "description": "Focado no desenvolvimento de APIs RESTful escaláveis e na otimização de bancos de dados para melhorar a performance das aplicações web."
+      "title": "Backend Developer",
+      "period": "jun 2024 - jun 2025",
+      "description": "Na Beasybox, iniciei o SaaS do zero, montei o time de engenharia e estruturei processos para 8 pessoas. Liderei a migração de IA single-model para Multi-Agent Orchestration e engenhei arquitetura RAG com PGVector e PostgreSQL."
     },
     "exp4": {
-      "title": "Estagiário de Desenvolvimento",
-      "description": "Desenvolvimento de funcionalidades para o sistema interno da escola, focando em melhorias na experiência do usuário e otimização de processos administrativos."
+      "title": "Vice-Presidente",
+      "period": "mar 2025 - Presente",
+      "description": "Na Liga de Algoritmos da PUCRS, construí o site e a plataforma do zero, coordenei desafios semanais de programação competitiva e cresci a liga de 10 para 80 membros ativos (crescimento de 700%)."
+    },
+    "exp5": {
+      "title": "Tutor de Matemática",
+      "period": "fev 2024 - jun 2024",
+      "description": "Estágio no Colégio Marista Champagnat, auxiliando alunos em cálculos e gestão de projetos acadêmicos."
     }
   },
   "sections": {
@@ -65,6 +73,21 @@
       "description_long_p1": "Lobo Guará foi uma iniciativa voltada a auxiliar migrantes no Brasil. A ideia surgiu durante a 5ª Maratona de Inovação da PUCRS.",
       "description_long_p2": "Atuei principalmente na construção da interface da aplicação para fortalecer meus conhecimentos em front-end."
     },
+    "beecrm": {
+      "description_short": "CRM completo com pipelines Kanban, inbox de e-mail integrado, gestão de contatos e agendamento de reuniões.",
+      "description_long_p1": "O BeeCRM é um sistema de gestão de relacionamento com clientes completo, construído com NestJS no backend e React no frontend. Inclui pipelines Kanban com drag-and-drop para vendas, inbox de e-mail integrado, gestão de contatos e agendamento via calendário.",
+      "description_long_p2": "Atuei tanto no backend quanto no frontend, trabalhando com autenticação JWT, integração com serviços AWS (S3, SES, Bedrock), WebSockets para funcionalidades em tempo real, e Prisma com PostgreSQL para o banco de dados."
+    },
+    "numerama": {
+      "description_short": "Sistema PDV nativo para Android voltado a terminais de pagamento, construído com Kotlin e Jetpack Compose.",
+      "description_long_p1": "O Numerama é um sistema de Ponto de Venda (PDV) nativo para Android, projetado para terminais de pagamento. Desenvolvido com Kotlin e Jetpack Compose para uma interface declarativa e moderna.",
+      "description_long_p2": "O projeto segue Clean Architecture com injeção de dependência via Dagger Hilt, Retrofit para integração com APIs e gerenciamento de estado reativo com ViewModel e StateFlow."
+    },
+    "liga": {
+      "description_short": "Plataforma de programação competitiva da PUCRS para resolver desafios de algoritmos e acompanhar rankings.",
+      "description_long_p1": "A Plataforma da Liga de Algoritmos é o frontend do sistema de programação competitiva da PUCRS, onde membros resolvem desafios de algoritmos e acompanham rankings em tempo real.",
+      "description_long_p2": "Construída com React, TypeScript e Vite, a plataforma inclui interface de resolução de problemas, leaderboards, perfis de usuário e painel administrativo para gestão de problemas."
+    },
     "all_projects_title": "Meus Projetos",
     "all_projects_desc": "Uma coleção detalhada dos trabalhos que desenvolvi, focados em resolver problemas reais com código limpo e eficiente.",
     "repo": "Repositório",
@@ -85,8 +108,8 @@
     "title_part2": "Mim",
     "who_am_i": {
       "title": "Quem Eu Sou?",
-      "p1": "Olá! Meu nome é Bernardo Kirsch, sou um desenvolvedor de software, focado em backend e apaixonado por criar soluções tecnológicas que fazem a diferença.",
-      "p2": "Hoje, meu foco principal é o ambiente em nuvem, onde posso aplicar meus conhecimentos para desenvolver aplicações escaláveis e eficientes."
+      "p1": "Olá! Sou Bernardo Kirsch, Engenheiro de Software com experiência em arquiteturas backend resilientes, plataformas SaaS com IA, sistemas distribuídos e infraestrutura cloud em escala. Meu foco é assumir ownership total dos produtos, projetar arquiteturas escaláveis e transformar gargalos complexos em soluções performáticas.",
+      "p2": "Ao longo da minha carreira, atuei em todo o ciclo de vida do desenvolvimento de software, com ênfase em arquitetura cloud (AWS), automação DevOps, orquestração de IA e construção de sistemas críticos para aplicações de alta escala."
     },
     "education": {
       "title": "Faculdade e Educação",

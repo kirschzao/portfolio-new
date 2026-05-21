@@ -12,29 +12,37 @@
   "hero": {
     "greeting": "HELLO, I AM",
     "role1": "Bernardo Kirsch,",
-    "role2": "Cloud Developer,",
-    "role3": "Tech Enthusiast.",
-    "description": "Developer passionate about creating modern, fast, and impactful digital experiences. Always looking to help people through technology."
+    "role2": "Software Engineer,",
+    "role3": "Cloud Architect.",
+    "description": "Software Engineer with hands-on experience building resilient backend architectures, AI-driven SaaS platforms, distributed systems, and cloud infrastructure at scale."
   },
   "timeline": {
     "title_part1": "My Professional",
     "title_part2": "Journey",
     "exp1": {
       "title": "Cloud Developer",
-      "period": "2026 - Present",
-      "description": "Creating real solutions that drive digital transformation for companies worldwide..."
+      "period": "Dec 2025 - Present",
+      "description": "At Oryza Labs (Tecnopuc), architected 15+ distributed systems on AWS for enterprise clients including Sem Parar and Shopee. End-to-end responsibility from system design to production deployment, bridging software engineering and operational cloud infrastructure."
     },
     "exp2": {
-      "title": "DevOps Engineer",
-      "description": "Actively participated in the life cycles of several projects, ensuring that the development and product pipeline remained aligned. My main contributions range from backlog understanding to AWS infrastructure management."
+      "title": "DevOps Developer",
+      "period": "Jun 2025 - Dec 2025",
+      "description": "At Beasybox, promoted after 4 months to lead infrastructure, CI/CD, and system performance. Implemented CI/CD pipelines with Docker, structured cloud infrastructure from scratch, and optimized AI response latency by ~40%. Scaled the platform to 100+ companies."
     },
     "exp3": {
       "title": "Backend Developer",
-      "description": "Focused on developing scalable RESTful APIs and optimizing databases to improve web application performance."
+      "period": "Jun 2024 - Jun 2025",
+      "description": "At Beasybox, started the SaaS from scratch, built the engineering team, and structured processes for 8 people. Led the architectural shift from single-model AI to Multi-Agent Orchestration and engineered a RAG architecture with PGVector and PostgreSQL."
     },
     "exp4": {
-      "title": "Development Intern",
-      "description": "Developing features for the school's internal system, focusing on user experience improvements and administrative process optimization."
+      "title": "Vice President",
+      "period": "Mar 2025 - Present",
+      "description": "At PUCRS Liga de Algoritmos, built the league's website and platform from scratch, coordinated weekly competitive programming challenges, and grew the league from 10 to 80 active members (700% growth)."
+    },
+    "exp5": {
+      "title": "Math Tutor",
+      "period": "Feb 2024 - Jun 2024",
+      "description": "Internship at Colégio Marista Champagnat, assisting students with calculus and academic project management."
     }
   },
   "sections": {
@@ -65,6 +73,21 @@
       "description_long_p1": "Lobo Guará was an initiative aimed at helping migrants in Brazil. The idea emerged during the 5th PUCRS Innovation Marathon.",
       "description_long_p2": "I mainly worked on building the application interface to strengthen my front-end knowledge."
     },
+    "beecrm": {
+      "description_short": "Full-featured CRM with Kanban pipelines, integrated email inbox, contact management, and meeting scheduling.",
+      "description_long_p1": "BeeCRM is a complete customer relationship management system built with NestJS on the backend and React on the frontend. It features drag-and-drop Kanban pipelines for sales, an integrated email inbox, contact management, and calendar scheduling.",
+      "description_long_p2": "I worked on both backend and frontend, handling JWT authentication, AWS service integrations (S3, SES, Bedrock), WebSockets for real-time features, and Prisma with PostgreSQL for the database layer."
+    },
+    "numerama": {
+      "description_short": "Native Android POS system for payment terminals, built with Kotlin and Jetpack Compose.",
+      "description_long_p1": "Numerama is a native Android Point-of-Sale (POS) system designed for payment terminals. Built with Kotlin and Jetpack Compose for a declarative and modern UI.",
+      "description_long_p2": "The project follows Clean Architecture with Dagger Hilt for dependency injection, Retrofit for API integration, and reactive state management using ViewModel and StateFlow."
+    },
+    "liga": {
+      "description_short": "PUCRS competitive programming platform to solve algorithm challenges and track rankings.",
+      "description_long_p1": "The Liga de Algoritmos Platform is the frontend for PUCRS's competitive programming system, where members solve algorithm challenges and track rankings in real-time.",
+      "description_long_p2": "Built with React, TypeScript, and Vite, the platform includes a problem-solving interface, leaderboards, user profiles, and an admin panel for problem management."
+    },
     "all_projects_title": "My Projects",
     "all_projects_desc": "A detailed collection of the works I developed, focused on solving real problems with clean and efficient code.",
     "repo": "Repository",
@@ -85,8 +108,8 @@
     "title_part2": "Me",
     "who_am_i": {
       "title": "Who Am I?",
-      "p1": "Hello! My name is Bernardo Kirsch, I am a software developer focused on backend and passionate about creating technological solutions that make a difference.",
-      "p2": "Today, my main focus is the cloud environment, where I can apply my knowledge to develop scalable and efficient applications."
+      "p1": "Hi! I'm Bernardo Kirsch, a Software Engineer with hands-on experience building resilient backend architectures, AI-driven SaaS platforms, distributed systems, and cloud infrastructure at scale. My focus is on taking extreme ownership of products, designing scalable architectures, and turning complex bottlenecks into performant, reliable solutions.",
+      "p2": "Throughout my career, I've operated across the entire lifecycle of software development, with a heavy emphasis on cloud architecture (AWS), DevOps automation, AI orchestration, and building production-critical systems for high-scale applications."
     },
     "education": {
       "title": "College and Education",

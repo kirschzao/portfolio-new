@@ -78,6 +78,60 @@ export default function AllProjects() {
         "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181280884.jpeg",
         "https://nGL2AXDmrUpsglkT.public.blob.vercel-storage.com/1754181282436.jpeg"
       ]
+    },
+    {
+      id: 5,
+      title: "BeeCRM",
+      description: [
+        t('projects.beecrm.description_long_p1'),
+        t('projects.beecrm.description_long_p2')
+      ],
+      technologies: ["NestJS", "React", "Prisma", "PostgreSQL", "AWS", "WebSockets"],
+      repoLink: "https://github.com/kirschzao",
+      demoLink: null,
+      images: [
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.52.55.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.53.10.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.53.22.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.53.30.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.53.36.png"
+      ]
+    },
+    {
+      id: 6,
+      title: "Numerama PDV",
+      description: [
+        t('projects.numerama.description_long_p1'),
+        t('projects.numerama.description_long_p2')
+      ],
+      technologies: ["Kotlin", "Jetpack Compose", "Dagger Hilt", "Retrofit", "Clean Architecture"],
+      repoLink: "https://github.com/kirschzao",
+      demoLink: null,
+      images: [
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.45.29.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.45.48.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.45.59.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.46.17.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-21%20at%2010.48.32.jpeg",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-21%20at%2010.48.23.jpeg"
+      ]
+    },
+    {
+      id: 7,
+      title: "Liga de Algoritmos",
+      description: [
+        t('projects.liga.description_long_p1'),
+        t('projects.liga.description_long_p2')
+      ],
+      technologies: ["React", "TypeScript", "Vite", "TanStack", "TailwindCss"],
+      repoLink: "https://github.com/orgs/Liga-de-Algoritmos-PUCRS/repositories",
+      demoLink: "https://www.ligadealgoritmos.com/",
+      images: [
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.41.27.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.41.44.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.42.00.png",
+        "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.42.11.png"
+      ]
     }
   ];
 

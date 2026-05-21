@@ -34,6 +34,30 @@ function ThirdSection() {
       image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/1765253024706.jpeg",
       gradient: "from-purple-500 to-pink-500"
     },
+    {
+      id: 4,
+      title: "BeeCRM",
+      description: t('projects.beecrm.description_short'),
+      tech: ["NestJS", "React", "Prisma", "AWS"],
+      image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.52.55.png",
+      gradient: "from-amber-500 to-orange-500"
+    },
+    {
+      id: 5,
+      title: "Numerama PDV",
+      description: t('projects.numerama.description_short'),
+      tech: ["Kotlin", "Jetpack Compose", "Hilt"],
+      image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.45.29.png",
+      gradient: "from-red-500 to-rose-500"
+    },
+    {
+      id: 6,
+      title: "Liga de Algoritmos",
+      description: t('projects.liga.description_short'),
+      tech: ["React", "TypeScript", "TanStack"],
+      image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/Captura%20de%20Tela%202026-05-21%20a%CC%80s%2010.41.27.png",
+      gradient: "from-teal-500 to-cyan-500"
+    },
   ];
 
   useEffect(() => {

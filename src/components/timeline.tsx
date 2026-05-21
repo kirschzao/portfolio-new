@@ -16,23 +16,30 @@ export default function Timeline() {
     {
       title: t('timeline.exp2.title'),
       company: "Beasybox",
-      period: "2025 - 2025",
+      period: t('timeline.exp2.period'),
       description: t('timeline.exp2.description'),
       technologies: ["AWS", "EC2","ECS","ECR","SES","SQS","S3","Kubernets", "Docker", "Terraform","Agile","Lean","Scrum"],
     },
     {
       title: t('timeline.exp3.title'),
       company: "Beasybox",
-      period: "2024 - 2025",
+      period: t('timeline.exp3.period'),
       description: t('timeline.exp3.description'),
       technologies: ["NestJs", "Docker", "Spring", "Redis", "Jest"],
     },
     {
       title: t('timeline.exp4.title'),
-      company: "Marista Champagnat",
-      period: "09/2023 - 02/2024",
+      company: "Liga de Algoritmos — PUCRS",
+      period: t('timeline.exp4.period'),
       description: t('timeline.exp4.description'),
-      technologies: ["React", "JavaScript", "Python", "Pandas", "SQL"],
+      technologies: ["React", "TypeScript", "TanStack", "TailwindCss"],
+    },
+    {
+      title: t('timeline.exp5.title'),
+      company: "Colégio Marista Champagnat",
+      period: t('timeline.exp5.period'),
+      description: t('timeline.exp5.description'),
+      technologies: ["Cálculos", "Gestão de Projetos"],
     },
   ];
 
