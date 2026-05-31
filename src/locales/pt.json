@@ -127,7 +127,7 @@
     "view_cert": "Ver Certificado",
     "no_image": "Sem imagem disponível",
     "certs": {
-      "cert1_desc": "Esperando...",
+      "cert1_desc": "Certificação que valida conhecimentos fundamentais em computação em nuvem e serviços AWS, abrangendo conceitos de segurança, arquitetura, precificação e suporte.",
       "cert2_desc": "Certificação focada em boas práticas de desenvolvimento de software, abordando princípios de código limpo e design patterns.",
       "cert3_desc": "Curso completo de desenvolvimento web fullstack, abrangendo desde o frontend com React até o backend com Node.js."
     }

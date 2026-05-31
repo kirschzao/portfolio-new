@@ -45,7 +45,7 @@ export default function AboutMe() {
       title: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
       description: t('about.certs.cert1_desc'),
-      image: null
+      image: "https://ngl2axdmrupsglkt.public.blob.vercel-storage.com/certificado.png"
     },
     {
       id: "cert2",
