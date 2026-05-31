@@ -127,7 +127,7 @@
     "view_cert": "Zertifikat ansehen",
     "no_image": "Kein Bild verfügbar",
     "certs": {
-      "cert1_desc": "Warten...",
+      "cert1_desc": "Zertifizierung, die grundlegende Kenntnisse in Cloud Computing und AWS-Diensten validiert, einschließlich Sicherheit, Architektur, Preisgestaltung und Support-Konzepte.",
       "cert2_desc": "Zertifizierung mit Fokus auf Best Practices der Softwareentwicklung, Clean Code Prinzipien und Design Patterns.",
       "cert3_desc": "Kompletter Fullstack-Webentwicklungskurs, von Frontend mit React bis Backend mit Node.js."
     }
